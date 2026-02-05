@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  hello:
+    image: nginxdemos/hello
+    container_name: hello-idp-test
+    ports:
+      - "8088:80"
+    restart: unless-stopped
