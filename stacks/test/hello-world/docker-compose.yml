@@ -6,4 +6,12 @@ services:
     container_name: hello-idp-test
     ports:
       - "8088:80"
+      - "9000:9000"
     restart: unless-stopped
+    networks:
+      pfsense-vlan:
+        ipv4_address: 172.20.60.41
+
+networks:
+  pfsense-vlan:
+    external: true
