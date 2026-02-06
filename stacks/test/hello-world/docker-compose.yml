@@ -11,6 +11,9 @@ services:
     networks:
       pfsense-vlan:
         ipv4_address: 172.20.60.41
+    deploy:
+      restart_policy:
+        condition: any
     labels:
       - "com.portainer.stack.deploy=true"
 
