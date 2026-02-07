@@ -14,11 +14,11 @@ services:
       - "--providers.file.watch=true"
       - "--api.dashboard=true"
       - "--api.insecure=false"
+      - "--certificatesResolvers.cloudflare.acme.dnsChallenge.apiToken=${CF_DNS_API_TOKEN}"
     #   - "--entrypoints.web.address=:80"
     #   - "--entrypoints.websecure.address=:443"
 
     environment:
-      CF_DNS_API_TOKEN_FILE: ./cf_api_token # note using _FILE for docker secrets
       TRAEFIK_DASHBOARD_CREDENTIALS: ${TRAEFIK_DASHBOARD_CREDENTIALS}
 
     env_file: .env # use .env
@@ -51,18 +51,11 @@ services:
 
     networks:
       pfsense-vlan:
-        ipv4_address: 172.20.60.43
-
-    secrets:
-      - cf_api_token    
+        ipv4_address: 172.20.60.43 
 
     ports:
       - "80:80"
       - "443:443"
-
-secrets:
-  cf_api_token:
-    file: ./cf_api_token.txt    
 
 networks:
   pfsense-vlan:
