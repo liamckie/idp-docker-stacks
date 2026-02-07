@@ -1,0 +1,27 @@
+# Environment variables
+.env
+.env.*
+
+# Secrets / tokens
+*.token
+*.key
+*.pem
+*.crt
+secrets/
+tokens/
+
+# Docker / runtime noise
+*.log
+*.pid
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Ignore Traefik's dynamic configuration files and ACME storage, as these are generated at runtime and should not be tracked in version control.
+infra/traefik/config/*
+
+# Ignore the CF API token file, as this contains sensitive information and should not be tracked in version control.
+infra/traefik/cf_api_token.txt
