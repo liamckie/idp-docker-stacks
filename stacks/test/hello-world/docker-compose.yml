@@ -4,22 +4,16 @@ services:
   hello:
     image: nginxdemos/hello
     container_name: hello-idp-test
-    # ports:
-    #   - "80"
-    #   - "9000"
+    ports:
+      - "8088:80"
+      - "9000:9000"
     restart: unless-stopped
-    # networks:
-    #   pfsense-vlan:
-    #     ipv4_address: 172.20.60.41
+    networks:
+      pfsense-vlan:
+        ipv4_address: 172.20.60.41
     labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.hello.entrypoints=https"
-      - "traefik.http.routers.hello.rule=Host(`hello.idp.labops.uk`)"
-      - "traefik.http.routers.hello.middlewares=default-headers,default-whitelist"
-      - "traefik.http.services.hello.loadbalancer.server.port=80"
-      
       - "com.portainer.stack.deploy=true"
 
-# networks:
-#   pfsense-vlan:
-#     external: true
+networks:
+  pfsense-vlan:
+    external: true
