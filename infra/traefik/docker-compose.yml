@@ -9,6 +9,7 @@ services:
       - no-new-privileges:true
     environment:
       CF_DNS_API_TOKEN: ${CF_DNS_API_TOKEN}
+      TRAEFIK_DASHBOARD_CREDENTIALS: ${TRAEFIK_DASHBOARD_CREDENTIALS}
     command:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
@@ -18,9 +19,6 @@ services:
       - "--api.insecure=false"
     #   - "--entrypoints.web.address=:80"
     #   - "--entrypoints.websecure.address=:443"
-
-    environment:
-      TRAEFIK_DASHBOARD_CREDENTIALS: ${TRAEFIK_DASHBOARD_CREDENTIALS}
 
     # env_file: .env # use .env
     
