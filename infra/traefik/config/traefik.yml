@@ -2,21 +2,12 @@ entryPoints:
   http:
     address: ":80"
     http:
-    #  middlewares: # uncomment if using CrowdSec - see my video
-    #    - crowdsec-bouncer@file
       redirections:
         entrypoint:
           to: https
           scheme: https
   https:
     address: ":443"
-    # http:
-    #  middlewares: # uncomment if using CrowdSec - see my video
-    #    - crowdsec-bouncer@file
-  # tcp:
-   # address: ":10000"
-  # apis:
-   # address: ":33073"
 
 api:
   dashboard: true

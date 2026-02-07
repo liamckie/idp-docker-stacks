@@ -21,7 +21,7 @@ services:
     environment:
       TRAEFIK_DASHBOARD_CREDENTIALS: ${TRAEFIK_DASHBOARD_CREDENTIALS}
 
-    env_file: .env # use .env
+    # env_file: .env # use .env
     
     volumes:
       - /etc/localtime:/etc/localtime:ro
