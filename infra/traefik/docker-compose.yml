@@ -25,8 +25,8 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ./infra/traefik/config:/etc/traefik
-      - ./infra/traefik/logs:/var/log/traefik
+      - ./config:/etc/traefik
+      - ./logs:/var/log/traefik
 
     labels:
       - "traefik.enable=true"
