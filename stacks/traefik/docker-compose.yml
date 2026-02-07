@@ -3,3 +3,7 @@ services:
     extends:
       file: ../../infra/traefik/docker-compose.yml
       service: traefik
+
+networks:
+  pfsense-vlan:
+    external: true      
