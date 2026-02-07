@@ -13,8 +13,7 @@ services:
     command:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
-      - "--providers.file.filename=/etc/traefik/dynamic.yml"
-      - "--providers.file.filename=/etc/traefik/traefik.yml"
+      - "--configFile=/etc/traefik/traefik.yml"
       - "--providers.file.watch=true"
       - "--api.dashboard=true"
       - "--api.insecure=false"
