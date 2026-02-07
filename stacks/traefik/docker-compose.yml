@@ -1,0 +1,5 @@
+services:
+  whoami:
+    extends:
+      file: ../../infra/traefik/docker-compose.yml
+      service: traefik
