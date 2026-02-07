@@ -7,6 +7,8 @@ services:
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
+    environment:
+      CF_DNS_API_TOKEN: ${CF_DNS_API_TOKEN}
     command:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
@@ -14,7 +16,6 @@ services:
       - "--providers.file.watch=true"
       - "--api.dashboard=true"
       - "--api.insecure=false"
-      - "--certificatesResolvers.cloudflare.acme.dnsChallenge.apiToken=${CF_DNS_API_TOKEN}"
     #   - "--entrypoints.web.address=:80"
     #   - "--entrypoints.websecure.address=:443"
 
