@@ -21,7 +21,7 @@ Thumbs.db
 .idea/
 
 # Ignore Traefik's dynamic configuration files and ACME storage, as these are generated at runtime and should not be tracked in version control.
-infra/traefik/config/*.yml
+! infra/traefik/config/*.yml
 infra/traefik/config/*.json
 
 # Ignore the CF API token file, as this contains sensitive information and should not be tracked in version control.
