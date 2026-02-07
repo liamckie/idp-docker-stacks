@@ -1,0 +1,73 @@
+version: "3.9"
+
+services:
+  traefik:
+    image: traefik:latest
+    container_name: traefik
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    command:
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--providers.file.filename=/etc/traefik/dynamic.yml"
+      - "--providers.file.watch=true"
+      - "--api.dashboard=true"
+      - "--api.insecure=false"
+    #   - "--entrypoints.web.address=:80"
+    #   - "--entrypoints.websecure.address=:443"
+
+    environment:
+      CF_DNS_API_TOKEN_FILE: ./cf_api_token # note using _FILE for docker secrets
+    #   CF_DNS_API_TOKEN: OZ9wK2ltu4GBBjJosxvgS1HLDlixoQyRgrN # if using .env
+      TRAEFIK_DASHBOARD_CREDENTIALS: ${TRAEFIK_DASHBOARD_CREDENTIALS}
+
+    env_file: .env # use .env
+    
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ~/docker_volumes/traefik-attempt-1/config:/etc/traefik
+      - ~/docker_volumes/traefik-attempt-1/logs:/var/log/traefik
+    #   - ./traefik.yml:/etc/traefik/traefik.yml:ro
+    #   - ./dynamic.yml:/etc/traefik/dynamic.yml:ro
+    #   - ./acme.json:/etc/traefik/acme.json
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik.entrypoints=http"
+      - "traefik.http.routers.traefik.rule=Host(`traefik.idp.labops.uk`)"
+    #   - "traefik.http.middlewares.traefik-auth.basicauth.users=${TRAEFIK_DASHBOARD_CREDENTIALS}"
+      - "traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"
+      - "traefik.http.routers.traefik.middlewares=traefik-https-redirect"
+      - "traefik.http.routers.traefik-secure.entrypoints=https"
+      - "traefik.http.routers.traefik-secure.rule=Host(`traefik.idp.labops.uk`)"
+    #   - "traefik.http.routers.traefik-secure.middlewares=traefik-auth"
+      - "traefik.http.routers.traefik-secure.tls=true"
+      - "traefik.http.routers.traefik-secure.tls.certresolver=cloudflare"
+      - "traefik.http.routers.traefik-secure.tls.domains[0].main=idp.labops.uk"
+      - "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.idp.labops.uk"
+      - "traefik.http.routers.traefik-secure.service=api@internal"
+      - "traefik.http.services.traefik.loadbalancer.server.port=8080"
+
+      - "com.portainer.stack.deploy=true"
+
+    networks:
+      pfsense-vlan:
+        ipv4_address: 172.20.60.43
+
+    secrets:
+      - cf_api_token    
+
+    ports:
+      - "80:80"
+      - "443:443"
+
+secrets:
+  cf_api_token:
+    file: ./cf_api_token.txt    
+
+networks:
+  pfsense-vlan:
+    external: true
