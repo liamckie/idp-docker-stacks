@@ -20,7 +20,7 @@ providers:
     filename: /etc/traefik/dynamic.yml
     watch: true  
 
-ServersTransport:
+serversTransport:
   insecureSkipVerify: true    
 
 certificatesResolvers:
