@@ -1,0 +1,52 @@
+entryPoints:
+  http:
+    address: ":80"
+    http:
+    #  middlewares: # uncomment if using CrowdSec - see my video
+    #    - crowdsec-bouncer@file
+      redirections:
+        entrypoint:
+          to: https
+          scheme: https
+  https:
+    address: ":443"
+    # http:
+    #  middlewares: # uncomment if using CrowdSec - see my video
+    #    - crowdsec-bouncer@file
+  # tcp:
+   # address: ":10000"
+  # apis:
+   # address: ":33073"
+
+api:
+  dashboard: true
+  insecure: true
+
+providers:
+  docker:
+    exposedByDefault: false
+  file:
+    filename: /etc/traefik/dynamic.yml
+    watch: true  
+
+ServersTransport:
+  insecureSkipVerify: true    
+
+certificatesResolvers:
+  cloudflare:
+    acme:
+      email: ${CF_EMAIL_ADDRESS}
+    #   caServer: https://acme-staging-v02.api.letsencrypt.org/directory
+      storage: /etc/traefik/acme.json
+      dnsChallenge: 
+        provider: cloudflare
+        delayBeforeCheck: 30
+        resolvers:
+          - "1.1.1.1:53"
+          - "1.0.0.1:53"
+
+log:
+  level: "INFO"
+  filePath: "/var/log/traefik/traefik.log"
+accessLog:
+  filePath: "/var/log/traefik/access.log"
