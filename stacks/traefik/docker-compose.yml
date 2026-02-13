@@ -3,8 +3,6 @@ services:
     extends:
       file: ../../infra/traefik/docker-compose.yml
       service: traefik
-      env_file:
-        - ../../infra/traefik/.env
 
 networks:
   pfsense-vlan:
