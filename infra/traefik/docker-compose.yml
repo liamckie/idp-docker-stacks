@@ -39,8 +39,6 @@ services:
     networks:
       pfsense-vlan:
         ipv4_address: 172.20.60.43
-    secrets:
-      - cf_api_token
 
 networks:
   pfsense-vlan:
