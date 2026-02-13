@@ -9,8 +9,8 @@ services:
     environment:
       CF_DNS_API_TOKEN: ${CF_DNS_API_TOKEN}
 
-    command:
-      - "--configFile=/etc/traefik/traefik.yml"
+    # command:
+    #   - "--configFile=/etc/traefik/traefik.yml"
 
     volumes:
       - /etc/localtime:/etc/localtime:ro
