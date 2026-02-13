@@ -72,3 +72,7 @@ More details on: https://doc.traefik.io/traefik/contributing/data-collection/
 2026-02-13T22:37:08Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
 2026-02-13T22:37:09Z INF Register... providerName=cloudflare.acme
 2026-02-13T22:37:09Z ERR Unable to obtain ACME certificate for domains error="cannot get ACME client acme: error: 400 :: POST :: https://acme-staging-v02.api.letsencrypt.org/acme/new-acct :: urn:ietf:params:acme:error:invalidContact :: Error validating contact(s) :: unable to parse email address" ACME CA=https://acme-staging-v02.api.letsencrypt.org/directory acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory domains=["idp.labops.uk","*.idp.labops.uk"] providerName=cloudflare.acme routerName=traefik-secure@docker rule=Host(`traefik.idp.labops.uk`)
+2026-02-13T22:38:50Z INF I have to go...
+2026-02-13T22:38:50Z INF Stopping server gracefully
+2026-02-13T22:38:50Z INF Server stopped
+2026-02-13T22:38:50Z INF Shutting down
