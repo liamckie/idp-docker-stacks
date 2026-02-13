@@ -5,21 +5,32 @@ services:
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
-
+    command:
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--providers.file.filename=/etc/traefik/dynamic.yml"
+      - "--providers.file.watch=true"
+      - "--api.dashboard=true"
+      - "--api.insecure=false"
+    #   - "--entrypoints.web.address=:80"
+    #   - "--entrypoints.websecure.address=:443"
     environment:
-      CF_DNS_API_TOKEN: ${CF_DNS_API_TOKEN}
+    #   CF_DNS_API_TOKEN: ${CF_DNS_API_TOKEN}
+      CF_DNS_API_TOKEN_FILE: ./cf_api_token 
 
     # command:
     #   - "--configFile=/etc/traefik/traefik.yml"
+
+    env_file: .env # use .env
 
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
     #   - ./infra/traefik/config:/etc/traefik
-      - ./infra/traefik/logs:/var/log/traefik
-      - ./infra/traefik/config/traefik.yml:/etc/traefik/traefik.yml:ro
-      - ./infra/traefik/config/dynamic.yml:/etc/traefik/dynamic.yml:ro
-      - ./infra/traefik/config/acme.json:/etc/traefik/acme.json
+      - ./logs:/var/log/traefik
+      - ./config/traefik.yml:/etc/traefik/traefik.yml:ro
+      - ./config/dynamic.yml:/etc/traefik/dynamic.yml:ro
+      - ./config/acme.json:/etc/traefik/acme.json
 
     labels:
       - "traefik.enable=true"
@@ -28,16 +39,22 @@ services:
       - "traefik.http.routers.traefik.rule=Host(`traefik.idp.labops.uk`)"
       - "traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"
       - "traefik.http.routers.traefik.middlewares=traefik-https-redirect"
-
+      - "traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"
       - "traefik.http.routers.traefik-secure.entrypoints=https"
       - "traefik.http.routers.traefik-secure.rule=Host(`traefik.idp.labops.uk`)"
       - "traefik.http.routers.traefik-secure.tls=true"
       - "traefik.http.routers.traefik-secure.tls.certresolver=cloudflare"
+      - "traefik.http.routers.traefik-secure.tls.domains[0].main=idp.labops.uk"
+      - "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.idp.labops.uk"
       - "traefik.http.routers.traefik-secure.service=api@internal"
+      - "traefik.http.services.traefik.loadbalancer.server.port=8080"
 
     ports:
       - "80:80"
       - "443:443"
+
+    secrets:
+      - cf_api_token      
 
     networks:
       pfsense-vlan:
@@ -46,3 +63,8 @@ services:
 networks: 
   pfsense-vlan: 
     external: true        
+
+
+secrets:
+  cf_api_token:
+    file: ./cf_api_token.txt     
