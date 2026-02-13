@@ -8,8 +8,6 @@ services:
     security_opt:
       - no-new-privileges:true
     env_file: .env
-    environment:
-      CF_DNS_API_TOKEN_FILE: ./cf_api_token
     command:
       - "--configFile=/etc/traefik/traefik.yml"
     volumes:
@@ -47,7 +45,3 @@ services:
 networks:
   pfsense-vlan:
     external: true
-
-secrets:
-  cf_api_token:
-    file: ./cf_api_token.txt
