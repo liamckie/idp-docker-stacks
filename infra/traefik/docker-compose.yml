@@ -15,8 +15,11 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ./infra/traefik/config:/etc/traefik
+    #   - ./infra/traefik/config:/etc/traefik
       - ./infra/traefik/logs:/var/log/traefik
+      - ./infra/traefik/config/traefik.yml:/etc/traefik/traefik.yml:ro
+      - ./infra/traefik/config/dynamic.yml:/etc/traefik/dynamic.yml:ro
+      - ./infra/traefik/config/acme.json:/etc/traefik/acme.json
 
     labels:
       - "traefik.enable=true"
