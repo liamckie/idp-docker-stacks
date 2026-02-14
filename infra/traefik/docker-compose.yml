@@ -33,8 +33,9 @@ services:
       - "80:80"
       - "443:443"
     labels:
-      - "traefik.enable=true"
+      - "com.portainer.stack.deploy=true"
 
+      - "traefik.enable=true"
       - "traefik.http.routers.traefik.entrypoints=http"
       - "traefik.http.routers.traefik.rule=Host(`traefik.idp.labops.uk`)"
       - "traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"
