@@ -7,8 +7,6 @@ services:
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
-    command:
-      - "--configFile=/etc/traefik/traefik.yml"
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
