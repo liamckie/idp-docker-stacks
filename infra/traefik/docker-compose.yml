@@ -11,10 +11,10 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - /data/compose/25/traefik/config/traefik.yml:/etc/traefik/traefik.yml:ro
-      - /data/compose/25/traefik/config/dynamic.yml:/etc/traefik/dynamic.yml:ro
-      - /data/compose/25/traefik/config/acme.json:/etc/traefik/acme.json
-      - /data/compose/25/infra/traefik/logs:/var/log/traefik
+      - /data/compose/28/traefik/config/traefik.yml:/etc/traefik/traefik.yml:ro
+      - /data/compose/28/traefik/config/dynamic.yml:/etc/traefik/dynamic.yml:ro
+      - /data/compose/28/traefik/config/acme.json:/etc/traefik/acme.json
+      - /data/compose/28/infra/traefik/logs:/var/log/traefik
     ports:
       - "80:80"
       - "443:443"
