@@ -5,8 +5,6 @@ services:
     image: traefik:latest
     container_name: traefik
     restart: unless-stopped
-    security_opt:
-      - no-new-privileges:true
     environment:
       - CF_DNS_API_TOKEN=${CF_DNS_API_TOKEN}
       - CF_EMAIL_ADDRESS=${CF_EMAIL_ADDRESS}
