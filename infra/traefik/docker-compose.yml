@@ -11,8 +11,8 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - https://github.com/liamckie/idp-docker-stacks/blob/main/infra/traefik/config/traefik.yml:/etc/traefik/traefik.yml:ro
-      - https://github.com/liamckie/idp-docker-stacks/blob/main/infra/traefik/config/dynamic.yml:/etc/traefik/dynamic.yml:ro
+      - ../../infra/traefik/config/traefik.yml:/etc/traefik/traefik.yml:ro
+      - ../../infra/traefik/config/dynamic.yml:/etc/traefik/dynamic.yml:ro
     #   - ./config/acme.json:/etc/traefik/acme.json
       - ../../infra/traefik/logs:/var/log/traefik
       - traefik-acme:/etc/traefik
