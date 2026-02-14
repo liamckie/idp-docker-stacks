@@ -11,10 +11,11 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ~/traefik.yml:/etc/traefik/traefik.yml:ro
-      - ~/dynamic.yml:/etc/traefik/dynamic.yml:ro
-      - ~/acme.json:/etc/traefik/acme.json
-      - ~/logs:/var/log/traefik
+      - https://github.com/liamckie/idp-docker-stacks/blob/main/infra/traefik/config/traefik.yml:/etc/traefik/traefik.yml:ro
+      - https://github.com/liamckie/idp-docker-stacks/blob/main/infra/traefik/config/dynamic.yml:/etc/traefik/dynamic.yml:ro
+    #   - ./config/acme.json:/etc/traefik/acme.json
+      - ../../infra/traefik/logs:/var/log/traefik
+      - traefik-acme:/etc/traefik
     ports:
       - "80:80"
       - "443:443"
@@ -41,3 +42,6 @@ services:
 networks:
   pfsense-vlan:
     external: true
+
+volumes:
+  traefik-acme:    
