@@ -14,9 +14,9 @@ services:
       - "--providers.file.filename=/etc/traefik/dynamic.yml"
       - "--providers.file.watch=true"
       - "--api.dashboard=true"
-      - "--api.insecure=false"
+      - "--api.insecure=true"
       - "--entrypoints.http.address=:80"
-      - "--entrypoints.httpss.address=:443"
+      - "--entrypoints.https.address=:443"
       - "--certificatesresolvers.cloudflare.acme.dnschallenge=true"
       - "--certificatesresolvers.cloudflare.acme.dnschallenge.provider=cloudflare"
       - "--certificatesresolvers.cloudflare.acme.email=${CF_EMAIL_ADDRESS}"
@@ -28,7 +28,7 @@ services:
       - ./dynamic.yml:/etc/traefik/dynamic.yml:ro
     #   - ./config/acme.json:/etc/traefik/acme.json
       - ./logs:/var/log/traefik
-      - traefik-acme:/etc/traefik
+      - traefik-acme:/etc/traefik/acme.json
     ports:
       - "80:80"
       - "443:443"
