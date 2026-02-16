@@ -272,3 +272,7 @@ More details on: https://doc.traefik.io/traefik/contributing/data-collection/
 2026-02-16T21:49:09Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
 2026-02-16T21:49:09Z INF Starting provider *docker.Provider
 2026-02-16T21:51:24Z ERR Unable to obtain ACME certificate for domains error="unable to generate a certificate for the domains [idp.labops.uk *.idp.labops.uk]: error: one or more domains had a problem:\n[*.idp.labops.uk] propagation: time limit exceeded: last error: authoritative nameservers: NS walt.ns.cloudflare.com.:53 returned NXDOMAIN for _acme-challenge.idp.labops.uk.\n" ACME CA=https://acme-staging-v02.api.letsencrypt.org/directory acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory domains=["idp.labops.uk","*.idp.labops.uk"] providerName=cloudflare.acme routerName=traefik-secure@docker rule=Host(`traefik.idp.labops.uk`)
+2026-02-16T22:04:04Z INF I have to go...
+2026-02-16T22:04:04Z INF Stopping server gracefully
+2026-02-16T22:04:04Z INF Server stopped
+2026-02-16T22:04:04Z INF Shutting down
