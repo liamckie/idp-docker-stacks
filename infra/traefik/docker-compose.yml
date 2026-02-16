@@ -11,7 +11,7 @@ services:
     command:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
-      - "--providers.file.filename=/etc/traefik/dynamic.yml"
+      - "--providers.file.filename=/config/dynamic.yml"
       - "--providers.file.watch=true"
       - "--api.dashboard=true"
       - "--api.insecure=true"
@@ -20,7 +20,7 @@ services:
       - "--certificatesresolvers.cloudflare.acme.dnschallenge=true"
       - "--certificatesresolvers.cloudflare.acme.dnschallenge.provider=cloudflare"
       - "--certificatesresolvers.cloudflare.acme.email=${CF_EMAIL_ADDRESS}"
-      - "--certificatesresolvers.cloudflare.acme.storage=/etc/traefik/acme.json"
+      - "--certificatesresolvers.cloudflare.acme.storage=/etc/traefik/acme/acme.json"
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
@@ -28,7 +28,7 @@ services:
       - ./config/dynamic.yml:/etc/traefik/dynamic.yml:ro
     #   - ./config/acme.json:/etc/traefik/acme.json
       - ./logs:/var/log/traefik
-      - traefik-acme:/etc/traefik/acme.json
+      - traefik-acme:/etc/traefik/acme
     ports:
       - "80:80"
       - "443:443"
