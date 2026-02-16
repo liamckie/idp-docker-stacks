@@ -6,13 +6,9 @@ services:
     container_name: traefik
     restart: unless-stopped
     environment:
-      - CF_DNS_API_TOKEN=${CF_DNS_API_TOKEN}
-      - CF_EMAIL_ADDRESS=${CF_EMAIL_ADDRESS}
+      - CF_DNS_API_TOKEN
+      - CF_EMAIL_ADDRESS
     command:
-      - "--providers.docker=true"
-      - "--providers.docker.exposedbydefault=false"
-      - "--providers.file.filename=/config/dynamic.yml"
-      - "--providers.file.watch=true"
       - "--api.dashboard=true"
       - "--api.insecure=true"
       - "--entrypoints.http.address=:80"
@@ -21,6 +17,7 @@ services:
       - "--certificatesresolvers.cloudflare.acme.dnschallenge.provider=cloudflare"
       - "--certificatesresolvers.cloudflare.acme.email=${CF_EMAIL_ADDRESS}"
       - "--certificatesresolvers.cloudflare.acme.storage=/etc/traefik/acme/acme.json"
+      - "--certificatesresolvers.cloudflare.acme.dnschallenge.delaybeforecheck=10"
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro

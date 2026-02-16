@@ -1,7 +1,7 @@
 http:
   routers:
     traefik-dashboard:
-      rule: "Host(`${TRAEFIK_HOST}`)"
+      rule: "Host(`traefik.idp.labops.uk`)"
       entryPoints:
         - https
       service: api@internal
