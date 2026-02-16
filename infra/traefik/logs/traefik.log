@@ -128,3 +128,147 @@ More details on: https://doc.traefik.io/traefik/contributing/data-collection/
 2026-02-13T23:03:50Z INF Stopping server gracefully
 2026-02-13T23:03:50Z INF Server stopped
 2026-02-13T23:03:50Z INF Shutting down
+2026-02-14T21:07:50Z WRN Traefik can reject some encoded characters in the request path.When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986),it is recommended to set these options to `false` to avoid split-view situation.Refer to the documentation for more details: https://doc.traefik.io/traefik/v3.6/migrate/v3/#encoded-characters-configuration-default-values
+2026-02-14T21:07:50Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-14T21:07:50Z INF Traefik version 3.6.8 built on 2026-02-11T16:35:39Z version=3.6.8
+2026-02-14T21:07:50Z INF Version check is enabled.
+2026-02-14T21:07:50Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-14T21:07:50Z INF It also collects usage data during this process.
+2026-02-14T21:07:50Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-14T21:07:50Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-14T21:07:50Z ERR The ACME resolve is skipped from the resolvers list error="unable to get ACME account: permissions 755 for /etc/traefik/acme.json are too open, please use 600" resolver=cloudflare
+2026-02-14T21:07:50Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-14T21:07:50Z INF Starting provider *file.Provider
+2026-02-14T21:07:50Z ERR Error while building configuration (for the first time) error="field not found, node: headers" providerName=file
+2026-02-14T21:07:50Z INF Starting provider *traefik.Provider
+2026-02-14T21:07:50Z INF Starting provider *docker.Provider
+2026-02-14T21:07:50Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-14T21:07:51Z ERR Router uses a nonexistent certificate resolver certificateResolver=cloudflare routerName=traefik-secure@docker
+2026-02-14T21:12:21Z INF I have to go...
+2026-02-14T21:12:21Z INF Stopping server gracefully
+2026-02-14T21:12:21Z INF Server stopped
+2026-02-14T21:12:21Z INF Shutting down
+2026-02-14T21:12:30Z WRN Traefik can reject some encoded characters in the request path.When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986),it is recommended to set these options to `false` to avoid split-view situation.Refer to the documentation for more details: https://doc.traefik.io/traefik/v3.6/migrate/v3/#encoded-characters-configuration-default-values
+2026-02-14T21:12:30Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-14T21:12:30Z INF Traefik version 3.6.8 built on 2026-02-11T16:35:39Z version=3.6.8
+2026-02-14T21:12:30Z INF Version check is enabled.
+2026-02-14T21:12:30Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-14T21:12:30Z INF It also collects usage data during this process.
+2026-02-14T21:12:30Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-14T21:12:30Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-14T21:12:30Z ERR The ACME resolve is skipped from the resolvers list error="unable to get ACME account: permissions 755 for /etc/traefik/acme.json are too open, please use 600" resolver=cloudflare
+2026-02-14T21:12:30Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-14T21:12:30Z INF Starting provider *file.Provider
+2026-02-14T21:12:30Z ERR Error while building configuration (for the first time) error="field not found, node: headers" providerName=file
+2026-02-14T21:12:30Z INF Starting provider *traefik.Provider
+2026-02-14T21:12:30Z INF Starting provider *docker.Provider
+2026-02-14T21:12:30Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-14T21:12:31Z ERR Router uses a nonexistent certificate resolver certificateResolver=cloudflare routerName=traefik-secure@docker
+2026-02-14T21:13:08Z INF I have to go...
+2026-02-14T21:13:08Z INF Stopping server gracefully
+2026-02-14T21:13:08Z INF Server stopped
+2026-02-14T21:13:08Z INF Shutting down
+2026-02-14T21:13:10Z WRN Traefik can reject some encoded characters in the request path.When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986),it is recommended to set these options to `false` to avoid split-view situation.Refer to the documentation for more details: https://doc.traefik.io/traefik/v3.6/migrate/v3/#encoded-characters-configuration-default-values
+2026-02-14T21:13:10Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-14T21:13:10Z INF Traefik version 3.6.8 built on 2026-02-11T16:35:39Z version=3.6.8
+2026-02-14T21:13:10Z INF Version check is enabled.
+2026-02-14T21:13:10Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-14T21:13:10Z INF It also collects usage data during this process.
+2026-02-14T21:13:10Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-14T21:13:10Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-14T21:13:10Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-14T21:13:10Z INF Starting provider *file.Provider
+2026-02-14T21:13:10Z ERR Error while building configuration (for the first time) error="field not found, node: headers" providerName=file
+2026-02-14T21:13:10Z INF Starting provider *traefik.Provider
+2026-02-14T21:13:10Z INF Starting provider *acme.Provider
+2026-02-14T21:13:10Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-14T21:13:10Z INF Starting provider *docker.Provider
+2026-02-14T21:13:10Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-14T21:13:11Z INF Register... providerName=cloudflare.acme
+2026-02-14T21:13:11Z ERR Unable to obtain ACME certificate for domains error="cannot get ACME client acme: error: 400 :: POST :: https://acme-staging-v02.api.letsencrypt.org/acme/new-acct :: urn:ietf:params:acme:error:invalidContact :: Error validating contact(s) :: unable to parse email address" ACME CA=https://acme-staging-v02.api.letsencrypt.org/directory acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory domains=["idp.labops.uk","*.idp.labops.uk"] providerName=cloudflare.acme routerName=traefik-secure@docker rule=Host(`traefik.idp.labops.uk`)
+2026-02-14T21:15:09Z INF I have to go...
+2026-02-14T21:15:09Z INF Stopping server gracefully
+2026-02-14T21:15:09Z INF Server stopped
+2026-02-14T21:15:09Z INF Shutting down
+2026-02-14T21:15:11Z WRN Traefik can reject some encoded characters in the request path.When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986),it is recommended to set these options to `false` to avoid split-view situation.Refer to the documentation for more details: https://doc.traefik.io/traefik/v3.6/migrate/v3/#encoded-characters-configuration-default-values
+2026-02-14T21:15:11Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-14T21:15:11Z INF Traefik version 3.6.8 built on 2026-02-11T16:35:39Z version=3.6.8
+2026-02-14T21:15:11Z INF Version check is enabled.
+2026-02-14T21:15:11Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-14T21:15:11Z INF It also collects usage data during this process.
+2026-02-14T21:15:11Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-14T21:15:11Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-14T21:15:11Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-14T21:15:11Z INF Starting provider *file.Provider
+2026-02-14T21:15:11Z ERR Error while building configuration (for the first time) error="field not found, node: headers" providerName=file
+2026-02-14T21:15:11Z INF Starting provider *traefik.Provider
+2026-02-14T21:15:11Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-14T21:15:11Z INF Starting provider *docker.Provider
+2026-02-14T21:15:11Z INF Starting provider *acme.Provider
+2026-02-14T21:15:11Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-14T21:15:13Z INF Register... providerName=cloudflare.acme
+2026-02-14T21:19:39Z ERR Unable to obtain ACME certificate for domains error="unable to generate a certificate for the domains [idp.labops.uk *.idp.labops.uk]: error: one or more domains had a problem:\n[*.idp.labops.uk] propagation: time limit exceeded: last error: authoritative nameservers: NS walt.ns.cloudflare.com.:53 returned NXDOMAIN for _acme-challenge.idp.labops.uk.\n[idp.labops.uk] propagation: time limit exceeded: last error: authoritative nameservers: NS walt.ns.cloudflare.com.:53 returned NXDOMAIN for _acme-challenge.idp.labops.uk.\n" ACME CA=https://acme-staging-v02.api.letsencrypt.org/directory acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory domains=["idp.labops.uk","*.idp.labops.uk"] providerName=cloudflare.acme routerName=traefik-secure@docker rule=Host(`traefik.idp.labops.uk`)
+2026-02-14T21:38:42Z INF I have to go...
+2026-02-14T21:38:42Z INF Stopping server gracefully
+2026-02-14T21:38:42Z INF Server stopped
+2026-02-14T21:38:42Z INF Shutting down
+2026-02-14T21:38:48Z WRN Traefik can reject some encoded characters in the request path.When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986),it is recommended to set these options to `false` to avoid split-view situation.Refer to the documentation for more details: https://doc.traefik.io/traefik/v3.6/migrate/v3/#encoded-characters-configuration-default-values
+2026-02-14T21:38:48Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-14T21:38:48Z INF Traefik version 3.6.8 built on 2026-02-11T16:35:39Z version=3.6.8
+2026-02-14T21:38:48Z INF Version check is enabled.
+2026-02-14T21:38:48Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-14T21:38:48Z INF It also collects usage data during this process.
+2026-02-14T21:38:48Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-14T21:38:48Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-14T21:38:48Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-14T21:38:48Z INF Starting provider *file.Provider
+2026-02-14T21:38:48Z ERR Error while building configuration (for the first time) error="field not found, node: headers" providerName=file
+2026-02-14T21:38:48Z INF Starting provider *traefik.Provider
+2026-02-14T21:38:48Z INF Starting provider *docker.Provider
+2026-02-14T21:38:48Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-14T21:38:48Z INF Starting provider *acme.Provider
+2026-02-14T21:38:48Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-14T21:38:50Z INF Register... providerName=cloudflare.acme
+2026-02-14T21:42:19Z ERR Unable to obtain ACME certificate for domains error="unable to generate a certificate for the domains [idp.labops.uk *.idp.labops.uk]: error: one or more domains had a problem:\n[*.idp.labops.uk] propagation: time limit exceeded: last error: authoritative nameservers: NS walt.ns.cloudflare.com.:53 did not return the expected TXT record [fqdn: _acme-challenge.idp.labops.uk., value: agTMZ0kJGl7CfRD4hBClbzmKfINGhpn-T1ADQY5Gh6c]: test\n" ACME CA=https://acme-staging-v02.api.letsencrypt.org/directory acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory domains=["idp.labops.uk","*.idp.labops.uk"] providerName=cloudflare.acme routerName=traefik-secure@docker rule=Host(`traefik.idp.labops.uk`)
+2026-02-15T21:38:48Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-16T21:49:09Z WRN Traefik can reject some encoded characters in the request path.When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986),it is recommended to set these options to `false` to avoid split-view situation.Refer to the documentation for more details: https://doc.traefik.io/traefik/v3.6/migrate/v3/#encoded-characters-configuration-default-values
+2026-02-16T21:49:09Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-16T21:49:09Z INF Traefik version 3.6.8 built on 2026-02-11T16:35:39Z version=3.6.8
+2026-02-16T21:49:09Z INF Version check is enabled.
+2026-02-16T21:49:09Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-16T21:49:09Z INF It also collects usage data during this process.
+2026-02-16T21:49:09Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-16T21:49:09Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-16T21:49:09Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-16T21:49:09Z INF Starting provider *file.Provider
+2026-02-16T21:49:09Z ERR Error while building configuration (for the first time) error="field not found, node: headers" providerName=file
+2026-02-16T21:49:09Z INF Starting provider *traefik.Provider
+2026-02-16T21:49:09Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-16T21:49:09Z INF Starting provider *acme.Provider
+2026-02-16T21:49:09Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-16T21:49:09Z INF Starting provider *docker.Provider
+2026-02-16T21:51:24Z ERR Unable to obtain ACME certificate for domains error="unable to generate a certificate for the domains [idp.labops.uk *.idp.labops.uk]: error: one or more domains had a problem:\n[*.idp.labops.uk] propagation: time limit exceeded: last error: authoritative nameservers: NS walt.ns.cloudflare.com.:53 returned NXDOMAIN for _acme-challenge.idp.labops.uk.\n" ACME CA=https://acme-staging-v02.api.letsencrypt.org/directory acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory domains=["idp.labops.uk","*.idp.labops.uk"] providerName=cloudflare.acme routerName=traefik-secure@docker rule=Host(`traefik.idp.labops.uk`)
