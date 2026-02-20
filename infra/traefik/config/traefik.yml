@@ -26,7 +26,7 @@ serversTransport:
 certificatesResolvers:
   cloudflare:
     acme:
-      email: CF_EMAIL_ADDRESS
+      email: ${CF_EMAIL_ADDRESS}
       caServer: https://acme-staging-v02.api.letsencrypt.org/directory
       storage: /etc/traefik/acme.json
       dnsChallenge: 

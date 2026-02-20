@@ -922,3 +922,35 @@ time="2026-02-20T23:05:45Z" level=error msg="accept tcp [::]:443: use of closed 
 time="2026-02-20T23:05:45Z" level=error msg="close tcp [::]:443: use of closed network connection" entryPointName=https
 time="2026-02-20T23:05:45Z" level=info msg="Server stopped"
 time="2026-02-20T23:05:45Z" level=info msg="Shutting down"
+time="2026-02-20T23:12:45Z" level=warning msg="Traefik can reject some encoded characters in the request path.When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986),it is recommended to set these options to `false` to avoid split-view situation.Refer to the documentation for more details: https://doc.traefik.io/traefik/v2.11/migration/v2/#encoded-characters-configuration-default-values"
+time="2026-02-20T23:12:45Z" level=info msg="Traefik version 2.11.37 built on 2026-02-11T10:02:59Z"
+time="2026-02-20T23:12:45Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2026-02-20T23:12:45Z" level=info msg="Starting provider aggregator *aggregator.ProviderAggregator"
+time="2026-02-20T23:12:45Z" level=info msg="Starting provider *file.Provider"
+time="2026-02-20T23:12:45Z" level=info msg="Starting provider *traefik.Provider"
+time="2026-02-20T23:12:45Z" level=info msg="Starting provider *docker.Provider"
+time="2026-02-20T23:12:45Z" level=info msg="Starting provider *acme.Provider"
+time="2026-02-20T23:12:45Z" level=info msg="Testing certificate renew..." providerName=cloudflare.acme ACME CA="https://acme-staging-v02.api.letsencrypt.org/directory"
+time="2026-02-20T23:12:45Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2026-02-20T23:12:46Z" level=error msg="middleware \"https-redirect@file\" does not exist" entryPointName=https routerName=traefik-dashboard@file
+time="2026-02-20T23:12:46Z" level=error msg="middleware \"https-redirect@file\" does not exist" entryPointName=https routerName=traefik-dashboard@file
+time="2026-02-20T23:13:45Z" level=info msg="I have to go..."
+time="2026-02-20T23:13:45Z" level=info msg="Stopping server gracefully"
+time="2026-02-20T23:13:45Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=http
+time="2026-02-20T23:13:45Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2026-02-20T23:13:45Z" level=error msg="close tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2026-02-20T23:13:45Z" level=error msg="close tcp [::]:80: use of closed network connection" entryPointName=http
+time="2026-02-20T23:13:45Z" level=error msg="accept tcp [::]:443: use of closed network connection" entryPointName=https
+time="2026-02-20T23:13:45Z" level=error msg="close tcp [::]:443: use of closed network connection" entryPointName=https
+time="2026-02-20T23:13:45Z" level=info msg="Server stopped"
+time="2026-02-20T23:13:45Z" level=info msg="Shutting down"
+time="2026-02-20T23:13:45Z" level=warning msg="Traefik can reject some encoded characters in the request path.When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986),it is recommended to set these options to `false` to avoid split-view situation.Refer to the documentation for more details: https://doc.traefik.io/traefik/v2.11/migration/v2/#encoded-characters-configuration-default-values"
+time="2026-02-20T23:13:45Z" level=info msg="Traefik version 2.11.37 built on 2026-02-11T10:02:59Z"
+time="2026-02-20T23:13:45Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2026-02-20T23:13:45Z" level=info msg="Starting provider aggregator *aggregator.ProviderAggregator"
+time="2026-02-20T23:13:45Z" level=info msg="Starting provider *file.Provider"
+time="2026-02-20T23:13:45Z" level=info msg="Starting provider *traefik.Provider"
+time="2026-02-20T23:13:45Z" level=info msg="Starting provider *docker.Provider"
+time="2026-02-20T23:13:45Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2026-02-20T23:13:45Z" level=info msg="Starting provider *acme.Provider"
+time="2026-02-20T23:13:45Z" level=info msg="Testing certificate renew..." ACME CA="https://acme-staging-v02.api.letsencrypt.org/directory" providerName=cloudflare.acme
