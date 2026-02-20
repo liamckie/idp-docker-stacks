@@ -22,6 +22,11 @@ http:
         customFrameOptionsValue: SAMEORIGIN
         customRequestHeaders:
           X-Forwarded-Proto: https
+    
+    https-redirect:
+      redirectScheme:
+        scheme: https
+        permanent: true
 
     idrac:
       headers:
