@@ -2,12 +2,12 @@ version: "3.9"
 
 services:
   traefik:
-    image: traefik:latest
+    image: traefik:v2.11
     container_name: traefik
     restart: unless-stopped
     environment:
       - CF_DNS_API_TOKEN
-      - CF_EMAIL_ADDRESS
+    #   - CF_EMAIL_ADDRESS
     command:
       - "--api.dashboard=true"
       - "--api.insecure=true"
@@ -15,7 +15,7 @@ services:
       - "--entrypoints.https.address=:443"
       - "--certificatesresolvers.cloudflare.acme.dnschallenge=true"
       - "--certificatesresolvers.cloudflare.acme.dnschallenge.provider=cloudflare"
-      - "--certificatesresolvers.cloudflare.acme.email=${CF_EMAIL_ADDRESS}"
+    #   - "--certificatesresolvers.cloudflare.acme.email=${CF_EMAIL_ADDRESS}"
       - "--certificatesresolvers.cloudflare.acme.storage=/etc/traefik/acme/acme.json"
       - "--certificatesresolvers.cloudflare.acme.dnschallenge.delaybeforecheck=10"
     volumes:
@@ -23,9 +23,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./config/traefik.yml:/etc/traefik/traefik.yml:ro
       - ./config/dynamic.yml:/etc/traefik/dynamic.yml:ro
-    #   - ./config/acme.json:/etc/traefik/acme.json
+      - ./config/acme.json:/etc/traefik/acme.json
       - ./logs:/var/log/traefik
-      - traefik-acme:/etc/traefik/acme
+    #   - traefik-acme:/etc/traefik/acme
     ports:
       - "80:80"
       - "443:443"
