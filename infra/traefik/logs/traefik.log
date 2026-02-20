@@ -912,3 +912,13 @@ time="2026-02-20T22:57:31Z" level=info msg="Starting provider *acme.Provider"
 time="2026-02-20T22:57:31Z" level=info msg="Testing certificate renew..." ACME CA="https://acme-staging-v02.api.letsencrypt.org/directory" providerName=cloudflare.acme
 time="2026-02-20T22:57:31Z" level=info msg="Starting provider *docker.Provider"
 time="2026-02-20T22:57:31Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2026-02-20T23:05:45Z" level=info msg="I have to go..."
+time="2026-02-20T23:05:45Z" level=info msg="Stopping server gracefully"
+time="2026-02-20T23:05:45Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=http
+time="2026-02-20T23:05:45Z" level=error msg="close tcp [::]:80: use of closed network connection" entryPointName=http
+time="2026-02-20T23:05:45Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2026-02-20T23:05:45Z" level=error msg="close tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2026-02-20T23:05:45Z" level=error msg="accept tcp [::]:443: use of closed network connection" entryPointName=https
+time="2026-02-20T23:05:45Z" level=error msg="close tcp [::]:443: use of closed network connection" entryPointName=https
+time="2026-02-20T23:05:45Z" level=info msg="Server stopped"
+time="2026-02-20T23:05:45Z" level=info msg="Shutting down"

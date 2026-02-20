@@ -6,6 +6,8 @@ http:
         - https
       service: api@internal
       tls: {}
+      middlewares:
+        - https-redirect
 
   middlewares:
     default-headers:
