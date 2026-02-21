@@ -983,3 +983,780 @@ More details on: https://doc.traefik.io/traefik/contributing/data-collection/
 2026-02-20T23:16:42Z INF Starting provider *acme.ChallengeTLSALPN
 2026-02-20T23:16:42Z INF Starting provider *acme.Provider
 2026-02-20T23:16:42Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-20T23:22:19Z INF I have to go...
+2026-02-20T23:22:19Z INF Stopping server gracefully
+2026-02-20T23:22:19Z INF Server stopped
+2026-02-20T23:22:19Z INF Shutting down
+2026-02-20T23:27:56Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-20T23:27:56Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-20T23:27:56Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-20T23:27:56Z INF Version check is enabled.
+2026-02-20T23:27:56Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-20T23:27:56Z INF It also collects usage data during this process.
+2026-02-20T23:27:56Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-20T23:27:56Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-20T23:27:56Z INF Account URI does not match the current CAServer. The account will be reset. providerName=cloudflare.acme
+2026-02-20T23:27:56Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-20T23:27:56Z INF Starting provider *file.Provider
+2026-02-20T23:27:56Z INF Starting provider *traefik.Provider
+2026-02-20T23:27:56Z INF Starting provider *docker.Provider
+2026-02-20T23:27:56Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-20T23:27:56Z INF Starting provider *acme.Provider
+2026-02-20T23:27:56Z INF Testing certificate renew... acmeCA=https://acme-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-20T23:34:33Z INF I have to go...
+2026-02-20T23:34:33Z INF Stopping server gracefully
+2026-02-20T23:34:34Z INF Server stopped
+2026-02-20T23:34:34Z INF Shutting down
+2026-02-20T23:34:34Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-20T23:34:34Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-20T23:34:34Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-20T23:34:34Z INF Version check is enabled.
+2026-02-20T23:34:34Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-20T23:34:34Z INF It also collects usage data during this process.
+2026-02-20T23:34:34Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-20T23:34:34Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-20T23:34:34Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-20T23:34:34Z INF Starting provider *file.Provider
+2026-02-20T23:34:34Z INF Starting provider *traefik.Provider
+2026-02-20T23:34:34Z INF Starting provider *docker.Provider
+2026-02-20T23:34:34Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-20T23:34:34Z INF Starting provider *acme.Provider
+2026-02-20T23:34:34Z INF Testing certificate renew... acmeCA=https://acme-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-20T23:34:40Z INF Register... providerName=cloudflare.acme
+2026-02-20T23:34:40Z ERR Unable to obtain ACME certificate for domains error="cannot get ACME client acme: error: 400 :: POST :: https://acme-v02.api.letsencrypt.org/acme/new-acct :: urn:ietf:params:acme:error:invalidContact :: Error validating contact(s) :: unable to parse email address" ACME CA=https://acme-v02.api.letsencrypt.org/directory acmeCA=https://acme-v02.api.letsencrypt.org/directory domains=["idp.labops.uk","*.idp.labops.uk"] providerName=cloudflare.acme routerName=traefik-secure@docker rule=Host(`traefik.idp.labops.uk`)
+2026-02-20T23:35:06Z INF I have to go...
+2026-02-20T23:35:06Z INF Stopping server gracefully
+2026-02-20T23:35:06Z INF Server stopped
+2026-02-20T23:35:06Z INF Shutting down
+2026-02-20T23:35:06Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-20T23:35:06Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-20T23:35:06Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-20T23:35:06Z INF Version check is enabled.
+2026-02-20T23:35:06Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-20T23:35:06Z INF It also collects usage data during this process.
+2026-02-20T23:35:06Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-20T23:35:06Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-20T23:35:06Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-20T23:35:06Z INF Starting provider *file.Provider
+2026-02-20T23:35:06Z INF Starting provider *traefik.Provider
+2026-02-20T23:35:06Z INF Starting provider *acme.Provider
+2026-02-20T23:35:06Z INF Testing certificate renew... acmeCA=https://acme-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-20T23:35:06Z INF Starting provider *docker.Provider
+2026-02-20T23:35:06Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-20T23:35:08Z INF Register... providerName=cloudflare.acme
+2026-02-20T23:35:09Z ERR Unable to obtain ACME certificate for domains error="cannot get ACME client acme: error: 400 :: POST :: https://acme-v02.api.letsencrypt.org/acme/new-acct :: urn:ietf:params:acme:error:invalidContact :: Error validating contact(s) :: unable to parse email address" ACME CA=https://acme-v02.api.letsencrypt.org/directory acmeCA=https://acme-v02.api.letsencrypt.org/directory domains=["idp.labops.uk","*.idp.labops.uk"] providerName=cloudflare.acme routerName=traefik-secure@docker rule=Host(`traefik.idp.labops.uk`)
+2026-02-20T23:35:30Z INF I have to go...
+2026-02-20T23:35:30Z INF Stopping server gracefully
+2026-02-20T23:35:30Z INF Server stopped
+2026-02-20T23:35:30Z INF Shutting down
+2026-02-20T23:35:31Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-20T23:35:31Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-20T23:35:31Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-20T23:35:31Z INF Version check is enabled.
+2026-02-20T23:35:31Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-20T23:35:31Z INF It also collects usage data during this process.
+2026-02-20T23:35:31Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-20T23:35:31Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-20T23:35:31Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-20T23:35:31Z INF Starting provider *file.Provider
+2026-02-20T23:35:31Z INF Starting provider *traefik.Provider
+2026-02-20T23:35:31Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-20T23:35:31Z INF Starting provider *acme.Provider
+2026-02-20T23:35:31Z INF Testing certificate renew... acmeCA=https://acme-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-20T23:35:31Z INF Starting provider *docker.Provider
+2026-02-20T23:35:37Z INF Register... providerName=cloudflare.acme
+2026-02-20T23:45:31Z WRN A new release of Traefik has been found: 3.6.8. Please consider updating.
+2026-02-21T17:32:16Z INF I have to go...
+2026-02-21T17:32:16Z INF Stopping server gracefully
+2026-02-21T17:32:16Z INF Server stopped
+2026-02-21T17:32:16Z INF Shutting down
+2026-02-21T17:32:18Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T17:32:18Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T17:32:18Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T17:32:18Z INF Version check is enabled.
+2026-02-21T17:32:18Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T17:32:18Z INF It also collects usage data during this process.
+2026-02-21T17:32:18Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T17:32:18Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T17:32:18Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T17:32:18Z INF Starting provider *file.Provider
+2026-02-21T17:32:18Z INF Starting provider *traefik.Provider
+2026-02-21T17:32:18Z INF Starting provider *docker.Provider
+2026-02-21T17:32:18Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T17:32:18Z INF Starting provider *acme.Provider
+2026-02-21T17:32:18Z INF Testing certificate renew... acmeCA=https://acme-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T17:36:35Z INF I have to go...
+2026-02-21T17:36:35Z INF Stopping server gracefully
+2026-02-21T17:36:35Z INF Server stopped
+2026-02-21T17:36:35Z INF Shutting down
+2026-02-21T17:36:36Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T17:36:36Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T17:36:36Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T17:36:36Z INF Version check is enabled.
+2026-02-21T17:36:36Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T17:36:36Z INF It also collects usage data during this process.
+2026-02-21T17:36:36Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T17:36:36Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T17:36:36Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T17:36:36Z INF Starting provider *file.Provider
+2026-02-21T17:36:36Z INF Starting provider *traefik.Provider
+2026-02-21T17:36:36Z INF Starting provider *docker.Provider
+2026-02-21T17:36:36Z INF Starting provider *acme.Provider
+2026-02-21T17:36:36Z INF Testing certificate renew... acmeCA=https://acme-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T17:36:36Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T17:36:38Z INF Register... providerName=cloudflare.acme
+2026-02-21T17:46:36Z WRN A new release of Traefik has been found: 3.6.8. Please consider updating.
+2026-02-21T17:50:23Z INF I have to go...
+2026-02-21T17:50:23Z INF Stopping server gracefully
+2026-02-21T17:50:23Z INF Server stopped
+2026-02-21T17:50:23Z INF Shutting down
+2026-02-21T17:50:24Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T17:50:24Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T17:50:24Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T17:50:24Z INF Version check is enabled.
+2026-02-21T17:50:24Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T17:50:24Z INF It also collects usage data during this process.
+2026-02-21T17:50:24Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T17:50:24Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T17:50:24Z INF Account URI does not match the current CAServer. The account will be reset. providerName=cloudflare.acme
+2026-02-21T17:50:24Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T17:50:24Z INF Starting provider *file.Provider
+2026-02-21T17:50:24Z INF Starting provider *traefik.Provider
+2026-02-21T17:50:24Z INF Starting provider *docker.Provider
+2026-02-21T17:50:24Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T17:50:24Z INF Starting provider *acme.Provider
+2026-02-21T17:50:24Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T17:50:46Z INF I have to go...
+2026-02-21T17:50:46Z INF Stopping server gracefully
+2026-02-21T17:50:46Z INF Server stopped
+2026-02-21T17:50:46Z INF Shutting down
+2026-02-21T17:50:47Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T17:50:47Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T17:50:47Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T17:50:47Z INF Version check is enabled.
+2026-02-21T17:50:47Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T17:50:47Z INF It also collects usage data during this process.
+2026-02-21T17:50:47Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T17:50:47Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T17:50:47Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T17:50:47Z INF Starting provider *file.Provider
+2026-02-21T17:50:47Z INF Starting provider *traefik.Provider
+2026-02-21T17:50:47Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T17:50:47Z INF Starting provider *docker.Provider
+2026-02-21T17:50:47Z INF Starting provider *acme.Provider
+2026-02-21T17:50:47Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T17:50:49Z INF Register... providerName=cloudflare.acme
+2026-02-21T18:00:47Z WRN A new release of Traefik has been found: 3.6.8. Please consider updating.
+2026-02-21T18:39:45Z INF I have to go...
+2026-02-21T18:39:45Z INF Stopping server gracefully
+2026-02-21T18:39:45Z INF Server stopped
+2026-02-21T18:39:45Z INF Shutting down
+2026-02-21T18:39:46Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T18:39:46Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T18:39:46Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T18:39:46Z INF Version check is enabled.
+2026-02-21T18:39:46Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T18:39:46Z INF It also collects usage data during this process.
+2026-02-21T18:39:46Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T18:39:46Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T18:39:46Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T18:39:46Z INF Starting provider *file.Provider
+2026-02-21T18:39:46Z INF Starting provider *traefik.Provider
+2026-02-21T18:39:46Z INF Starting provider *docker.Provider
+2026-02-21T18:39:46Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T18:39:46Z INF Starting provider *acme.Provider
+2026-02-21T18:39:46Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T18:49:46Z WRN A new release of Traefik has been found: 3.6.8. Please consider updating.
+2026-02-21T20:03:54Z INF I have to go...
+2026-02-21T20:03:54Z INF Stopping server gracefully
+2026-02-21T20:03:54Z INF Server stopped
+2026-02-21T20:03:54Z INF Shutting down
+2026-02-21T20:03:54Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:03:54Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:03:54Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:03:54Z INF Version check is enabled.
+2026-02-21T20:03:54Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:03:54Z INF It also collects usage data during this process.
+2026-02-21T20:03:54Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:03:54Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:03:54Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T20:03:54Z INF Starting provider *file.Provider
+2026-02-21T20:03:54Z INF Starting provider *traefik.Provider
+2026-02-21T20:03:54Z INF Starting provider *docker.Provider
+2026-02-21T20:03:54Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T20:03:54Z INF Starting provider *acme.Provider
+2026-02-21T20:03:54Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T20:07:52Z INF I have to go...
+2026-02-21T20:07:52Z INF Stopping server gracefully
+2026-02-21T20:07:52Z INF Server stopped
+2026-02-21T20:07:52Z INF Shutting down
+2026-02-21T20:07:52Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:07:52Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:07:52Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:07:52Z INF Version check is enabled.
+2026-02-21T20:07:52Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:07:52Z INF It also collects usage data during this process.
+2026-02-21T20:07:52Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:07:52Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:07:52Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T20:07:52Z INF Starting provider *file.Provider
+2026-02-21T20:07:52Z INF Starting provider *traefik.Provider
+2026-02-21T20:07:52Z INF Starting provider *docker.Provider
+2026-02-21T20:07:52Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T20:07:52Z INF Starting provider *acme.Provider
+2026-02-21T20:07:52Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T20:17:53Z WRN A new release of Traefik has been found: 3.6.8. Please consider updating.
+2026-02-21T20:19:13Z INF I have to go...
+2026-02-21T20:19:13Z INF Stopping server gracefully
+2026-02-21T20:19:13Z INF Server stopped
+2026-02-21T20:19:13Z INF Shutting down
+2026-02-21T20:19:14Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:19:14Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:19:14Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:19:14Z INF Version check is enabled.
+2026-02-21T20:19:14Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:19:14Z INF It also collects usage data during this process.
+2026-02-21T20:19:14Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:19:14Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:19:14Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:19:14Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:19:14Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:19:14Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:19:14Z INF Version check is enabled.
+2026-02-21T20:19:14Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:19:14Z INF It also collects usage data during this process.
+2026-02-21T20:19:14Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:19:14Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:19:14Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:19:15Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:19:15Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:19:15Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:19:15Z INF Version check is enabled.
+2026-02-21T20:19:15Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:19:15Z INF It also collects usage data during this process.
+2026-02-21T20:19:15Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:19:15Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:19:15Z ERR Command error error="command traefik error: error while building entryPoint http: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:19:15Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:19:15Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:19:15Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:19:15Z INF Version check is enabled.
+2026-02-21T20:19:15Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:19:15Z INF It also collects usage data during this process.
+2026-02-21T20:19:15Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:19:15Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:19:15Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:19:16Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:19:16Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:19:16Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:19:16Z INF Version check is enabled.
+2026-02-21T20:19:16Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:19:16Z INF It also collects usage data during this process.
+2026-02-21T20:19:16Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:19:16Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:19:16Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:19:18Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:19:18Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:19:18Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:19:18Z INF Version check is enabled.
+2026-02-21T20:19:18Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:19:18Z INF It also collects usage data during this process.
+2026-02-21T20:19:18Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:19:18Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:19:18Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:19:22Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:19:22Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:19:22Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:19:22Z INF Version check is enabled.
+2026-02-21T20:19:22Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:19:22Z INF It also collects usage data during this process.
+2026-02-21T20:19:22Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:19:22Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:19:22Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:19:29Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:19:29Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:19:29Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:19:29Z INF Version check is enabled.
+2026-02-21T20:19:29Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:19:29Z INF It also collects usage data during this process.
+2026-02-21T20:19:29Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:19:29Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:19:29Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:19:42Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:19:42Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:19:42Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:19:42Z INF Version check is enabled.
+2026-02-21T20:19:42Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:19:42Z INF It also collects usage data during this process.
+2026-02-21T20:19:42Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:19:42Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:19:42Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:20:08Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:20:08Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:20:08Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:20:08Z INF Version check is enabled.
+2026-02-21T20:20:08Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:20:08Z INF It also collects usage data during this process.
+2026-02-21T20:20:08Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:20:08Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:20:08Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:20:59Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:20:59Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:20:59Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:20:59Z INF Version check is enabled.
+2026-02-21T20:20:59Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:20:59Z INF It also collects usage data during this process.
+2026-02-21T20:20:59Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:20:59Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:20:59Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:21:59Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:21:59Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:21:59Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:21:59Z INF Version check is enabled.
+2026-02-21T20:21:59Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:21:59Z INF It also collects usage data during this process.
+2026-02-21T20:21:59Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:21:59Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:21:59Z ERR Command error error="command traefik error: error while building entryPoint http: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:23:00Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:23:00Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:23:00Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:23:00Z INF Version check is enabled.
+2026-02-21T20:23:00Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:23:00Z INF It also collects usage data during this process.
+2026-02-21T20:23:00Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:23:00Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:23:00Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:24:00Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:24:00Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:24:00Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:24:00Z INF Version check is enabled.
+2026-02-21T20:24:00Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:24:00Z INF It also collects usage data during this process.
+2026-02-21T20:24:00Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:24:00Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:24:00Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:25:00Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:25:00Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:25:00Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:25:00Z INF Version check is enabled.
+2026-02-21T20:25:00Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:25:00Z INF It also collects usage data during this process.
+2026-02-21T20:25:00Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:25:00Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:25:00Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:26:01Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:26:01Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:26:01Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:26:01Z INF Version check is enabled.
+2026-02-21T20:26:01Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:26:01Z INF It also collects usage data during this process.
+2026-02-21T20:26:01Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:26:01Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:26:01Z ERR Command error error="command traefik error: error while building entryPoint http: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:26:27Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:26:27Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:26:27Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:26:27Z INF Version check is enabled.
+2026-02-21T20:26:27Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:26:27Z INF It also collects usage data during this process.
+2026-02-21T20:26:27Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:26:27Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:26:27Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:26:28Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:26:28Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:26:28Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:26:28Z INF Version check is enabled.
+2026-02-21T20:26:28Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:26:28Z INF It also collects usage data during this process.
+2026-02-21T20:26:28Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:26:28Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:26:28Z ERR Command error error="command traefik error: error while building entryPoint http: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:26:28Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:26:28Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:26:28Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:26:28Z INF Version check is enabled.
+2026-02-21T20:26:28Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:26:28Z INF It also collects usage data during this process.
+2026-02-21T20:26:28Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:26:28Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:26:28Z ERR Command error error="command traefik error: error while building entryPoint http: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:26:29Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:26:29Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:26:29Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:26:29Z INF Version check is enabled.
+2026-02-21T20:26:29Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:26:29Z INF It also collects usage data during this process.
+2026-02-21T20:26:29Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:26:29Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:26:29Z ERR Command error error="command traefik error: error while building entryPoint http: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:26:30Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:26:30Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:26:30Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:26:30Z INF Version check is enabled.
+2026-02-21T20:26:30Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:26:30Z INF It also collects usage data during this process.
+2026-02-21T20:26:30Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:26:30Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:26:30Z ERR Command error error="command traefik error: error while building entryPoint http: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:26:32Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:26:32Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:26:32Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:26:32Z INF Version check is enabled.
+2026-02-21T20:26:32Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:26:32Z INF It also collects usage data during this process.
+2026-02-21T20:26:32Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:26:32Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:26:32Z ERR Command error error="command traefik error: error while building entryPoint http: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:26:36Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:26:36Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:26:36Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:26:36Z INF Version check is enabled.
+2026-02-21T20:26:36Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:26:36Z INF It also collects usage data during this process.
+2026-02-21T20:26:36Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:26:36Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:26:36Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:26:42Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:26:42Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:26:42Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:26:42Z INF Version check is enabled.
+2026-02-21T20:26:42Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:26:42Z INF It also collects usage data during this process.
+2026-02-21T20:26:42Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:26:42Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:26:42Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:26:56Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:26:56Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:26:56Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:26:56Z INF Version check is enabled.
+2026-02-21T20:26:56Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:26:56Z INF It also collects usage data during this process.
+2026-02-21T20:26:56Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:26:56Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:26:56Z ERR Command error error="command traefik error: error while building entryPoint traefik: building listener: error opening listener: listen tcp :8080: bind: address already in use"
+2026-02-21T20:26:59Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:26:59Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:26:59Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:26:59Z INF Version check is enabled.
+2026-02-21T20:26:59Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:26:59Z INF It also collects usage data during this process.
+2026-02-21T20:26:59Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:26:59Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:26:59Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T20:26:59Z INF Starting provider *file.Provider
+2026-02-21T20:26:59Z INF Starting provider *traefik.Provider
+2026-02-21T20:26:59Z INF Starting provider *docker.Provider
+2026-02-21T20:26:59Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T20:26:59Z INF Starting provider *acme.Provider
+2026-02-21T20:26:59Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T20:29:38Z INF I have to go...
+2026-02-21T20:29:38Z INF Stopping server gracefully
+2026-02-21T20:29:38Z INF Server stopped
+2026-02-21T20:29:38Z INF Shutting down
+2026-02-21T20:29:38Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:29:38Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:29:38Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:29:38Z INF Version check is enabled.
+2026-02-21T20:29:38Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:29:38Z INF It also collects usage data during this process.
+2026-02-21T20:29:38Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:29:38Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:29:38Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T20:29:38Z INF Starting provider *file.Provider
+2026-02-21T20:29:38Z INF Starting provider *traefik.Provider
+2026-02-21T20:29:38Z INF Starting provider *docker.Provider
+2026-02-21T20:29:38Z INF Starting provider *acme.Provider
+2026-02-21T20:29:38Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T20:29:38Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T20:29:40Z INF Register... providerName=cloudflare.acme
+2026-02-21T20:36:11Z INF I have to go...
+2026-02-21T20:36:11Z INF Stopping server gracefully
+2026-02-21T20:36:11Z INF Server stopped
+2026-02-21T20:36:11Z INF Shutting down
+2026-02-21T20:36:11Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:36:11Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:36:11Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:36:11Z INF Version check is enabled.
+2026-02-21T20:36:11Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:36:11Z INF It also collects usage data during this process.
+2026-02-21T20:36:11Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:36:11Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:36:11Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T20:36:11Z INF Starting provider *file.Provider
+2026-02-21T20:36:11Z INF Starting provider *traefik.Provider
+2026-02-21T20:36:11Z INF Starting provider *docker.Provider
+2026-02-21T20:36:11Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T20:36:11Z INF Starting provider *acme.Provider
+2026-02-21T20:36:11Z INF Testing certificate renew... acmeCA=https://acme-staging-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T20:37:27Z INF I have to go...
+2026-02-21T20:37:27Z INF Stopping server gracefully
+2026-02-21T20:37:27Z INF Server stopped
+2026-02-21T20:37:27Z INF Shutting down
+time="2026-02-21T20:37:30Z" level=warning msg="Traefik can reject some encoded characters in the request path.When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986),it is recommended to set these options to `false` to avoid split-view situation.Refer to the documentation for more details: https://doc.traefik.io/traefik/v2.11/migration/v2/#encoded-characters-configuration-default-values"
+time="2026-02-21T20:37:30Z" level=info msg="Traefik version 2.11.37 built on 2026-02-11T10:02:59Z"
+time="2026-02-21T20:37:30Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2026-02-21T20:37:30Z" level=info msg="Starting provider aggregator *aggregator.ProviderAggregator"
+time="2026-02-21T20:37:30Z" level=info msg="Starting provider *file.Provider"
+time="2026-02-21T20:37:30Z" level=info msg="Starting provider *traefik.Provider"
+time="2026-02-21T20:37:30Z" level=info msg="Starting provider *docker.Provider"
+time="2026-02-21T20:37:30Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2026-02-21T20:37:30Z" level=info msg="Starting provider *acme.Provider"
+time="2026-02-21T20:37:30Z" level=info msg="Testing certificate renew..." providerName=cloudflare.acme ACME CA="https://acme-staging-v02.api.letsencrypt.org/directory"
+time="2026-02-21T20:45:07Z" level=info msg="I have to go..."
+time="2026-02-21T20:45:07Z" level=info msg="Stopping server gracefully"
+time="2026-02-21T20:45:07Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2026-02-21T20:45:07Z" level=error msg="Error while starting server: accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2026-02-21T20:45:07Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=http
+time="2026-02-21T20:45:07Z" level=error msg="Error while starting server: accept tcp [::]:80: use of closed network connection" entryPointName=http
+time="2026-02-21T20:45:07Z" level=error msg="accept tcp [::]:443: use of closed network connection" entryPointName=https
+time="2026-02-21T20:45:07Z" level=error msg="Error while starting server: accept tcp [::]:443: use of closed network connection" entryPointName=https
+time="2026-02-21T20:45:07Z" level=info msg="Server stopped"
+time="2026-02-21T20:45:07Z" level=info msg="Shutting down"
+time="2026-02-21T20:45:08Z" level=warning msg="Traefik can reject some encoded characters in the request path.When your backend is not fully compliant with [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986),it is recommended to set these options to `false` to avoid split-view situation.Refer to the documentation for more details: https://doc.traefik.io/traefik/v2.11/migration/v2/#encoded-characters-configuration-default-values"
+time="2026-02-21T20:45:08Z" level=info msg="Traefik version 2.11.37 built on 2026-02-11T10:02:59Z"
+time="2026-02-21T20:45:08Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2026-02-21T20:45:08Z" level=info msg="Starting provider aggregator *aggregator.ProviderAggregator"
+time="2026-02-21T20:45:08Z" level=info msg="Starting provider *file.Provider"
+time="2026-02-21T20:45:08Z" level=info msg="Starting provider *traefik.Provider"
+time="2026-02-21T20:45:08Z" level=info msg="Starting provider *docker.Provider"
+time="2026-02-21T20:45:08Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2026-02-21T20:45:08Z" level=info msg="Starting provider *acme.Provider"
+time="2026-02-21T20:45:08Z" level=info msg="Testing certificate renew..." providerName=cloudflare.acme ACME CA="https://acme-staging-v02.api.letsencrypt.org/directory"
+time="2026-02-21T20:46:42Z" level=info msg="I have to go..."
+time="2026-02-21T20:46:42Z" level=info msg="Stopping server gracefully"
+time="2026-02-21T20:46:42Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2026-02-21T20:46:42Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=http
+time="2026-02-21T20:46:42Z" level=error msg="Error while starting server: accept tcp [::]:80: use of closed network connection" entryPointName=http
+time="2026-02-21T20:46:42Z" level=error msg="Error while starting server: accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2026-02-21T20:46:42Z" level=error msg="accept tcp [::]:443: use of closed network connection" entryPointName=https
+time="2026-02-21T20:46:42Z" level=error msg="close tcp [::]:443: use of closed network connection" entryPointName=https
+time="2026-02-21T20:46:42Z" level=info msg="Server stopped"
+time="2026-02-21T20:46:42Z" level=info msg="Shutting down"
+2026-02-21T20:46:43Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:46:43Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:46:43Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:46:43Z INF Version check is enabled.
+2026-02-21T20:46:43Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:46:43Z INF It also collects usage data during this process.
+2026-02-21T20:46:43Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:46:43Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:46:43Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T20:46:43Z INF Starting provider *file.Provider
+2026-02-21T20:46:43Z INF Starting provider *traefik.Provider
+2026-02-21T20:46:43Z INF Starting provider *docker.Provider
+2026-02-21T20:46:43Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T20:46:43Z INF Starting provider *acme.Provider
+2026-02-21T20:46:43Z INF Testing certificate renew... acmeCA=https://acme-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T20:46:48Z INF Register... providerName=cloudflare.acme
+2026-02-21T20:46:48Z ERR Unable to obtain ACME certificate for domains error="cannot get ACME client acme: error: 400 :: POST :: https://acme-v02.api.letsencrypt.org/acme/new-acct :: urn:ietf:params:acme:error:invalidContact :: Error validating contact(s) :: unable to parse email address" ACME CA=https://acme-v02.api.letsencrypt.org/directory acmeCA=https://acme-v02.api.letsencrypt.org/directory domains=["idp.labops.uk","*.idp.labops.uk"] providerName=cloudflare.acme routerName=traefik-secure@docker rule=Host(`traefik.idp.labops.uk`)
+2026-02-21T20:47:36Z INF I have to go...
+2026-02-21T20:47:36Z INF Stopping server gracefully
+2026-02-21T20:47:36Z INF Shutting down
+2026-02-21T20:47:36Z INF Server stopped
+2026-02-21T20:47:37Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:47:37Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:47:37Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:47:37Z INF Version check is enabled.
+2026-02-21T20:47:37Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:47:37Z INF It also collects usage data during this process.
+2026-02-21T20:47:37Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:47:37Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:47:37Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T20:47:37Z INF Starting provider *file.Provider
+2026-02-21T20:47:37Z INF Starting provider *traefik.Provider
+2026-02-21T20:47:37Z INF Starting provider *acme.Provider
+2026-02-21T20:47:37Z INF Testing certificate renew... acmeCA=https://acme-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T20:47:37Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T20:47:37Z INF Starting provider *docker.Provider
+2026-02-21T20:47:40Z INF Register... providerName=cloudflare.acme
+2026-02-21T20:47:40Z ERR Unable to obtain ACME certificate for domains error="cannot get ACME client acme: error: 400 :: POST :: https://acme-v02.api.letsencrypt.org/acme/new-acct :: urn:ietf:params:acme:error:invalidContact :: Error validating contact(s) :: unable to parse email address" ACME CA=https://acme-v02.api.letsencrypt.org/directory acmeCA=https://acme-v02.api.letsencrypt.org/directory domains=["idp.labops.uk","*.idp.labops.uk"] providerName=cloudflare.acme routerName=traefik-secure@docker rule=Host(`traefik.idp.labops.uk`)
+2026-02-21T20:48:14Z INF I have to go...
+2026-02-21T20:48:14Z INF Stopping server gracefully
+2026-02-21T20:48:14Z INF Server stopped
+2026-02-21T20:48:14Z INF Shutting down
+2026-02-21T20:48:14Z WRN Starting with v3.6.4, Traefik now rejects some encoded characters in the request path by default. Refer to the documentation for more details: https://doc.traefik.io/traefik/migrate/v3/#encoded-characters-in-request-path
+2026-02-21T20:48:14Z WRN delayBeforeCheck is now deprecated, please use propagation.delayBeforeChecks instead.
+2026-02-21T20:48:14Z INF Traefik version 3.6.6 built on 2025-12-29T15:47:44Z version=3.6.6
+2026-02-21T20:48:14Z INF Version check is enabled.
+2026-02-21T20:48:14Z INF Traefik checks for new releases to notify you if your version is out of date.
+2026-02-21T20:48:14Z INF It also collects usage data during this process.
+2026-02-21T20:48:14Z INF Check the documentation to get more info: https://doc.traefik.io/traefik/contributing/data-collection/
+2026-02-21T20:48:14Z INF 
+Stats collection is disabled.
+Help us improve Traefik by turning this feature on :)
+More details on: https://doc.traefik.io/traefik/contributing/data-collection/
+
+2026-02-21T20:48:14Z INF Starting provider aggregator *aggregator.ProviderAggregator
+2026-02-21T20:48:14Z INF Starting provider *file.Provider
+2026-02-21T20:48:14Z INF Starting provider *traefik.Provider
+2026-02-21T20:48:14Z INF Starting provider *docker.Provider
+2026-02-21T20:48:14Z INF Starting provider *acme.ChallengeTLSALPN
+2026-02-21T20:48:14Z INF Starting provider *acme.Provider
+2026-02-21T20:48:14Z INF Testing certificate renew... acmeCA=https://acme-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
+2026-02-21T20:48:16Z INF Register... providerName=cloudflare.acme
+2026-02-21T20:58:14Z WRN A new release of Traefik has been found: 3.6.8. Please consider updating.
