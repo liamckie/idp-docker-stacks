@@ -459,3 +459,9 @@ More details on: https://doc.traefik.io/traefik/contributing/data-collection/
 2026-03-05T09:54:13Z WRN A new release of Traefik has been found: 3.6.9. Please consider updating.
 2026-03-06T09:54:13Z INF Testing certificate renew... acmeCA=https://acme-v02.api.letsencrypt.org/directory providerName=cloudflare.acme
 2026-03-06T09:54:13Z WRN A new release of Traefik has been found: 3.6.9. Please consider updating.
+2026-03-06T17:18:34Z WRN Failed to inspect container daac34c172257efce6b4f9786db292cba19578fb16f726ce141af5ae9d7456fa error="Error response from daemon: No such container: daac34c172257efce6b4f9786db292cba19578fb16f726ce141af5ae9d7456fa" providerName=docker
+2026-03-06T20:04:41Z WRN Failed to inspect container a9c1c0657601884ef8e61183c8970a43df1310851162a73d8bed875620542908 error="Error response from daemon: No such container: a9c1c0657601884ef8e61183c8970a43df1310851162a73d8bed875620542908" providerName=docker
+2026-03-06T20:08:21Z WRN Failed to inspect container a83c124218dda7e4d8650cf6b9a57a378791a2b8e684bcc9020751e685f5b81b error="Error response from daemon: No such container: a83c124218dda7e4d8650cf6b9a57a378791a2b8e684bcc9020751e685f5b81b" providerName=docker
+2026-03-06T20:11:56Z WRN Failed to inspect container e07d4a12984965ba222cfa63325562e219ce28f93ba671788a538ea5474a0593 error="Error response from daemon: No such container: e07d4a12984965ba222cfa63325562e219ce28f93ba671788a538ea5474a0593" providerName=docker
+2026-03-06T20:31:07Z WRN Failed to inspect container 73873a3b7a32d6ad5d024bc0a4f818da82ad62d39ea7e8444e2d0c245b0985b5 error="Error response from daemon: No such container: 73873a3b7a32d6ad5d024bc0a4f818da82ad62d39ea7e8444e2d0c245b0985b5" providerName=docker
+2026-03-06T20:35:29Z WRN Failed to inspect container c2a00827443d9a2dc74b6912cf9b6a513d9d65a1ceaef3864258893547eac4d4 error="Error response from daemon: No such container: c2a00827443d9a2dc74b6912cf9b6a513d9d65a1ceaef3864258893547eac4d4" providerName=docker
