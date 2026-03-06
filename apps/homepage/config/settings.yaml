@@ -1,0 +1,22 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/settings
+
+background:
+    image: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80  # https://source.unsplash.com/random/?estrellas&auto=format&fit=crop&w=2560&q=80 # https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=
+
+favicon: https://liamckie.github.io/images/favicon/favicon.ico
+theme: dark
+headerStyle: clean
+hideVersion: true
+showStats: true
+cardBlur: md
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+layout:
+  Metrics:
+    style: row
+    columns: 1

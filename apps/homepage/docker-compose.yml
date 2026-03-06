@@ -1,0 +1,29 @@
+version: "3.3"
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    # ports:
+    #   - 3000:3000
+    env_file: /config/.env # use .env
+    volumes:
+      - ./config:/app/config # Make sure your local config directory exists
+      # - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations, see alternative methods
+    environment:
+      PUID: ${PUID} # read them from .env
+      PGID: ${PGID} # read them from .env
+      HOMEPAGE_ALLOWED_HOSTS: homepage.idp.labops.uk
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.homepage.rule=Host(`homepage.idp.labops.uk`)"
+      - "traefik.http.routers.homepage.entrypoints=https"
+      - "traefik.http.routers.homepage.tls=true"
+      - "traefik.http.services.homepage.loadbalancer.server.port=3000"
+    networks:
+      - pfsense-vlan
+
+
+networks:
+  pfsense-vlan:
+    external: true
