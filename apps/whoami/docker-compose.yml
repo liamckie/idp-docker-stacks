@@ -4,6 +4,18 @@ services:
   whoami:
     image: traefik/whoami
     container_name: whoami
-    ports:
-      - "8080:80"
+    # ports:
+    #   - "8080:80"
     restart: unless-stopped
+    networks:
+      - pfsense-vlan
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`whoami.idp.labops.uk`)"
+      - "traefik.http.routers.whoami.entrypoints=https"
+      - "traefik.http.routers.whoami.tls=true"
+      - "traefik.http.services.whoami.loadbalancer.server.port=80"
+
+networks:
+  pfsense-vlan:
+    external: true

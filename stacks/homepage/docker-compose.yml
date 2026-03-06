@@ -1,0 +1,9 @@
+services:
+  homepage:
+    extends:
+      file: ../../apps/homepage/docker-compose.yml
+      service: homepage
+
+networks:
+  pfsense-vlan:
+    external: true      

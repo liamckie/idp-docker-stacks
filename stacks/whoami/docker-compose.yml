@@ -3,3 +3,7 @@ services:
     extends:
       file: ../../apps/whoami/docker-compose.yml
       service: whoami
+
+networks:
+  pfsense-vlan:
+    external: true   
