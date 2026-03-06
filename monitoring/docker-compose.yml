@@ -1,0 +1,53 @@
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+      - ./prometheus:/etc/prometheus
+    networks:
+      pfsense-vlan:
+        ipv4_address: 172.20.60.45
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    volumes:
+      - ./grafana:/var/lib/grafana
+    networks:
+      pfsense-vlan:
+        ipv4_address: 172.20.60.46
+    labels:
+      - "com.portainer.stack.deploy=true"
+      - "traefik.enable=true"
+      - "traefik.http.routers.grafana.rule=Host(`grafana.idp.labops.uk`)"
+      - "traefik.http.routers.grafana.entrypoints=https"
+      - "traefik.http.routers.grafana.tls=true"
+      - "traefik.http.services.grafana.loadbalancer.server.port=3000"
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker:/var/lib/docker:ro
+    networks:
+      pfsense-vlan:
+        ipv4_address: 172.20.60.47
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: node-exporter
+    pid: host
+    volumes:
+      - /:/host:ro,rslave
+    command:
+      - '--path.rootfs=/host'
+    networks:
+      pfsense-vlan:
+        ipv4_address: 172.20.60.48
+
+networks:
+  pfsense-vlan:
+    external: true  
