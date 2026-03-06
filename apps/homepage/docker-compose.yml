@@ -21,7 +21,8 @@ services:
       - "traefik.http.routers.homepage.tls=true"
       - "traefik.http.services.homepage.loadbalancer.server.port=3000"
     networks:
-      - pfsense-vlan
+      pfsense-vlan:
+        ipv4_address: 172.20.60.44
 
 
 networks:
