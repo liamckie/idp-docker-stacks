@@ -46,6 +46,10 @@ services:
       - "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.idp.labops.uk"
       - "traefik.http.routers.traefik-secure.service=api@internal"
       - "traefik.http.services.traefik.loadbalancer.server.port=8080"
+
+      # Dashboard Metrics
+      - "traefik.http.routers.traefik-metrics.rule=Host(`traefik-metrics.idp.labops.uk`)"
+      - "traefik.http.routers.traefik-metrics.entrypoints=metrics"
     networks:
       pfsense-vlan:
         ipv4_address: 172.20.60.43

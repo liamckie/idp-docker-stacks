@@ -2,7 +2,18 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/configs/services/
 
-- My First Group:
-    - My First Service:
-        href: http://localhost/
-        description: Homepage is awesome
+- Services:
+    - Treafik:
+        href: https://traefik.idp.labops.uk/dashboard/#/
+        description: Dev Traefik Dashboard
+        icon: traefik-icon.png
+
+    - Grafana:
+        href: https://grafana.idp.labops.uk/d/000000001/prometheus-overview?orgId=1&refresh=5s
+        description: Dev Grafana Dashboard
+        icon: grafana-icon.png
+
+    - Portainer:
+        href: https://portainer.idp.labops.uk/
+        description: Dev Portainer Dashboard
+        icon: portainer-icon.png                   

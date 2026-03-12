@@ -1,0 +1,21 @@
+services:
+  cadvisor:
+    extends:
+      file: ../../monitoring/docker-compose.yml
+      service: cadvisor
+  grafana:
+    extends:
+      file: ../../monitoring/docker-compose.yml
+      service: grafana
+  node-exporter:
+    extends:
+      file: ../../monitoring/docker-compose.yml
+      service: node-exporter
+  prometheus:
+    extends:
+      file: ../../monitoring/docker-compose.yml
+      service: prometheus          
+
+networks:
+  pfsense-vlan:
+    external: true 
