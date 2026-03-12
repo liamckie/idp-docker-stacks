@@ -12,6 +12,8 @@ tokens/
 
 # Docker / runtime noise
 *.log
+logs/
+*.log.*
 *.pid
 
 # OS / editor junk
