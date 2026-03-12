@@ -3,9 +3,9 @@
 # https://gethomepage.dev/configs/bookmarks
 
 - Developer:
-    - Github:
+    - Github Repo:
         - abbr: GH
-          href: https://github.com/
+          href: https://github.com/liamckie/idp-docker-stacks
 
 - Social:
     - Reddit:

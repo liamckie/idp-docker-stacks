@@ -8,6 +8,9 @@ entryPoints:
           scheme: https
   https:
     address: ":443"
+  
+  metrics:
+    address: ":8081"
 
 api:
   dashboard: true
@@ -41,3 +44,10 @@ log:
   filePath: "/var/log/traefik/traefik.log"
 accessLog:
   filePath: "/var/log/traefik/access.log"
+
+metrics:
+  prometheus:
+    entryPoint: metrics
+    addRoutersLabels: true
+    addServicesLabels: true
+    addEntryPointsLabels: true
