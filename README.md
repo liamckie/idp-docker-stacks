@@ -1,41 +1,121 @@
-# IDP = Docker + Portainer + Git V1
+![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
+![Traefik](https://img.shields.io/badge/Traefik-Reverse%20Proxy-green)
+![Status](https://img.shields.io/badge/Project-Active-success)
 
-This IDP currently runs on an existing Docker dev node.
-Platform provisioning is handled separately via Ansible and is only required when creating or rebuilding nodes.
+# 🚀 Internal Developer Platform (IDP)
 
-## Architecture Overview
-
-This Internal Developer Platform (IDP) provides a GitOps-based workflow for deploying
-containerised applications onto an existing Docker environment.
-
-### Current Runtime
-- The IDP currently runs on an existing Docker development node (Docker LXC).
-- Portainer is used as the deployment engine, with stacks managed via Git repositories.
-- Application deployments are triggered by Git commits.
-
-### Infrastructure Provisioning
-- Infrastructure provisioning (LXC creation, Docker installation, base networking)
-  is handled separately using Ansible.
-- Ansible is only required when creating, rebuilding, or expanding platform nodes.
-- Day-to-day application deployments do not require Ansible interaction.
-
-This separation mirrors real-world platform engineering practices, where infrastructure
-code changes infrequently while application delivery happens continuously.
-
-## IDP Scope (v1)
-This IDP intentionally focuses on:
-
-- Git-driven application deployments
-- Consistent stack definitions
-- Platform-managed networking
-- Clear separation between infrastructure and application concerns
+> A self-hosted Internal Developer Platform built in a homelab environment, evolving from manual container management into a self-service platform.
 
 
-Out of scope for v1:
-- Kubernetes
-- Service mesh
-- Secrets automation
-- Self-service portals
+- Deploy and expose services using Docker + Portainer + Traefik + GitHub
+- Monitor everything with Prometheus & Grafana
+- Designed to evolve into a self-service platform (APIs + UI)
 
-These may be explored in future iterations but are not required for a functional,
-CV-ready IDP foundation.
+&nbsp;
+
+## 🧠 Why this project exists
+
+This project help:
+
+- Build real infrastructure instead of just studying theory
+- Understand how platforms abstract complexity for developers
+- Demonstrate real-world DevOps workflows
+
+&nbsp;
+
+## 🏗️ Architecture
+
+![IDP Architecture](./docs/architecture-diagram.png)
+
+&nbsp;
+
+## ✨ Features
+
+- 🌐 Reverse proxy routing via Traefik
+- 📦 Containerised services using Docker
+- 📊 Monitoring with Prometheus + Grafana
+- 🧭 Central dashboard via Homepage
+- 🔧 Domain-based service access
+
+&nbsp;
+
+## 🧰 Tech Stack
+
+| Category         | Tools               |
+|------------------|---------------------|
+| Containers       | Docker              |
+| Stack Management | Portainer           |
+| Reverse Proxy    | Traefik             |
+| Monitoring       | Prometheus, Grafana |
+| Dashboard        | Homepage            |
+
+&nbsp;
+
+## 📊 Observability
+
+- **Prometheus** collects system and service metrics  
+- **Grafana** provides dashboards for visualisation  
+- *(Planned)* Loki, promtail for log aggregation and collection
+
+&nbsp;
+
+## 🧩 Platform Vision
+
+This project is evolving into a **self-service Internal Developer Platform**:
+
+### 🔜 Upcoming Features
+
+- Environment Provisioner API  
+  → Create services via API instead of manual deployment  
+
+- DevOps Utility API  
+  → Logs, restart, status, health checks  
+
+- Web UI  
+  → Self-service platform interface  
+
+&nbsp;
+
+## 🛣️ Roadmap
+
+| Version | Focus |
+|--------|------|
+| V1     | Docker, Traefik, Monitoring, Docs |
+| V1.5   | Loki (log aggregation) |
+| V2     | Self-service APIs + UI |
+| V2.5   | Auth, CI/CD, production improvements |
+| V3     | Kubernetes (k3s) |
+
+&nbsp;
+
+## 📁 Documentation
+
+Detailed breakdowns available in [`docs/`](./docs):
+
+- Architecture
+- Networking
+- Traefik configuration
+- Monitoring stack
+- Deployment process
+- Roadmap
+
+&nbsp;
+
+## 🎯 What this demonstrates
+
+- Platform Engineering fundamentals  
+- Infrastructure abstraction  
+- Observability (metrics + dashboards)  
+- Real-world DevOps workflows  
+
+&nbsp;
+
+## ⚠️ Disclaimer
+
+This is a **homelab project** built for learning and demonstration purposes.
+
+&nbsp;
+
+## 🚀 Future Goal
+
+> Build a platform where services are created, deployed, and managed via API/UI — not manually.
