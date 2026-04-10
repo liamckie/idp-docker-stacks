@@ -34,6 +34,7 @@ This project help:
 - 🌐 Reverse proxy routing via Traefik
 - 📦 Containerised services using Docker
 - 📊 Monitoring with Prometheus + Grafana
+- 📕 Logging with Loki and Alloy
 - 🧭 Central dashboard via Homepage
 - 🔧 Domain-based service access
 
@@ -47,6 +48,7 @@ This project help:
 | Stack Management | Portainer           |
 | Reverse Proxy    | Traefik             |
 | Monitoring       | Prometheus, Grafana |
+| Logging          | Loki, Alloy         |
 | Dashboard        | Homepage            |
 
 &nbsp;
@@ -55,7 +57,7 @@ This project help:
 
 - **Prometheus** collects system and service metrics  
 - **Grafana** provides dashboards for visualisation  
-- *(Planned)* Loki, promtail for log aggregation and collection
+- **Loki, Alloy** for log aggregation and collection
 
 &nbsp;
 
@@ -78,13 +80,15 @@ This project is evolving into a **self-service Internal Developer Platform**:
 
 ## 🛣️ Roadmap
 
-| Version | Focus |
-|--------|------|
-| V1     | Docker, Traefik, Monitoring, Docs |
-| V1.5   | Loki (log aggregation) |
-| V2     | Self-service APIs + UI |
-| V2.5   | Auth, CI/CD, production improvements |
-| V3     | Kubernetes (k3s) |
+| Version  | Focus | Status |
+|----------|-------|--------|
+| v1.0.0   | Foundation: Docker, Traefik, Monitoring, Docs | ✅ Completed |
+| v1.1.0   | Logging: Loki + Alloy | ✅ Completed |
+| v1.2.0   | Alerting & Reliability | 🚧 In Progress |
+| v1.3.0   | Platform UX: Docs, Onboarding, Dashboards | ⏳ Planned |
+| v1.4.0   | Automation: APIs, Templates, Standardisation | ⏳ Planned |
+| v2.0.0   | GitOps: CI/CD & Automated Deployments | 🔮 Future |
+| v3.0.0   | Kubernetes: k3s Migration | 🔮 Future |
 
 &nbsp;
 

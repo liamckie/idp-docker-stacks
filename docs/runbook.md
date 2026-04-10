@@ -37,23 +37,27 @@ docker ps
 
 &nbsp;
 
-# Logs Not Appearing (Loki) ⚠️ (Planned for V1.5)
+# Logs Not Appearing (Loki)
 
 ## Symptoms
 - No logs visible in Grafana
 
 ## Checks
 
-### 1. Verify Promtail is running
+### 1. Verify Alloy is running
 
 <pre>
 docker ps
 </pre>
 
-### 2. Check Promtail configuration
+### 2. Check Alloy configuration
 - Ensure correct log paths are configured
 
 ### 3. Verify Loki datasource in Grafana
+- Check the datasource and click **Save & Test**
+
+### 4. Check the Traefik Static Config
+- Make sure that accessLog does not have a file path set
 
 &nbsp;
 
@@ -114,6 +118,8 @@ The following services should always be running:
 - Node Exporter
 - cAdvisor
 - Homepage
+- Loki
+- Alloy
 
 ## Verify with:
 

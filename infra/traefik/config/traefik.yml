@@ -43,7 +43,7 @@ log:
   level: "INFO"
   filePath: "/var/log/traefik/traefik.log"
 accessLog:
-  filePath: "/var/log/traefik/access.log"
+  format: json
 
 metrics:
   prometheus:

@@ -1,0 +1,41 @@
+services:
+  loki:
+    image: grafana/loki:3.7.0
+    container_name: loki
+    command: -config.file=/etc/loki/config.yaml
+    volumes:
+      - /root/idp-docker-stacks/logging/loki/config.yml:/etc/loki/config.yaml:ro
+      - loki_data:/loki
+    networks:
+      pfsense-vlan:
+        ipv4_address: 172.20.60.49
+    restart: unless-stopped
+
+  alloy:
+    image: grafana/alloy:latest
+    container_name: alloy
+    command:
+      - run
+      - --server.http.listen-addr=0.0.0.0:12345
+      - --storage.path=/var/lib/alloy/data
+      - /etc/alloy/config.alloy
+    volumes:
+      - /root/idp-docker-stacks/logging/alloy/config.alloy:/etc/alloy/config.alloy:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+      - alloy_data:/var/lib/alloy/data
+    ports:
+      - "12345:12345"
+    networks:
+      pfsense-vlan:
+        ipv4_address: 172.20.60.50
+    depends_on:
+      - loki
+    restart: unless-stopped
+
+volumes:
+  loki_data:
+  alloy_data:
+
+networks:
+  pfsense-vlan:
+    external: true
