@@ -30,8 +30,9 @@ Container logs -> Alloy -> Loki -> Grafana
 
 ## Key configuration notes
 - Grafana Explore must use the **Loki** datasource when querying logs
-- Traefik access logs must be written to **stdout**, not to a file, for Docker log collection to work
-- Loki was configured to allow ingestion of older samples during initial setup
+- Alloy discovers Docker containers through the Docker socket
+- Useful labels include `job`, `container`, and `compose_service`
+- Loki keeps recent logs for short-term troubleshooting
 
 &nbsp;
 
@@ -93,5 +94,5 @@ Show all Docker logs:
 
 ### Traefik logs not appearing
 - Ensure Traefik access logs are enabled
-- Ensure access logs are written to stdout
-- Do not use filePath if Alloy is collecting via Docker logs
+- Generate traffic to Traefik before querying logs
+- Query by `compose_service` or `container` label in Grafana Explore

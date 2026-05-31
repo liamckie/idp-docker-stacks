@@ -2,23 +2,24 @@
 
 ## Overview
 
-The platform is built around Docker as the execution layer, with Traefik acting as the entry point for all services and Homepage as the central hub for navigation and easy access to services
+The platform is built around Docker as the execution layer, with Traefik acting as the entry point for services and Homepage as the central hub for navigation.
 
 <pre>
 User
 │
 ▼
-Tailscale
+Network access
 │
 ▼
 Traefik (Reverse Proxy)
 │
 ├── Homepage
-├── Portainer
-└── Hello (first test app)
+├── Grafana
+├── Hello / Whoami demo services
+└── Prometheus metrics
 │
 ▼
-Prometheus → Grafana
+Loki logs → Grafana
 </pre>
 
 &nbsp;
@@ -38,6 +39,15 @@ Prometheus → Grafana
 
 ### Grafana
 - Visualises metrics and dashboards
+
+### Loki and Alloy
+- Collect and store Docker container logs
+
+### Demo services
+- Hello and Whoami are lightweight services used to validate routing
+
+### External access
+- Tailscale may be used for private access, but it is managed outside this repository
 
 &nbsp;
 

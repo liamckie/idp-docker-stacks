@@ -33,3 +33,6 @@ infra/traefik/cf_api_token.txt
 *.db
 *.sqlite
 *.sqlite3
+
+# Grafana runtime data
+monitoring/grafana/

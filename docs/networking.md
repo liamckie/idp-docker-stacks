@@ -17,14 +17,15 @@ User → Domain → Traefik → Container
 ### Domains
 - Each service is assigned a subdomain
 - Example:
-  - app.idp.local
-  - grafana.idp.local
+  - homepage.idp.labops.uk
+  - grafana.idp.labops.uk
 
 ### Reverse Proxy
 - Traefik routes traffic based on host rules
 
 ### Internal Networking
-- Docker containers are all on one network for now (plan on creating a seperate one just for containers, so there's no need to statically assign IP addresses to each container)
+- Services currently use the external `pfsense-vlan` Docker network
+- Some core services have static IPs for predictable routing and scraping
 
 &nbsp;
 

@@ -7,8 +7,8 @@
 > A self-hosted Internal Developer Platform built in a homelab environment, evolving from manual container management into a self-service platform.
 
 
-- Deploy and expose services using Docker + Portainer + Traefik + GitHub
-- Monitor everything with Prometheus & Grafana
+- Deploy and expose services using Docker Compose, Traefik, and GitHub
+- Monitor and log platform services with Prometheus, Grafana, Alloy, and Loki
 - Designed to evolve into a self-service platform (APIs + UI)
 
 &nbsp;
@@ -45,7 +45,7 @@ This project help:
 | Category         | Tools               |
 |------------------|---------------------|
 | Containers       | Docker              |
-| Stack Management | Portainer           |
+| Stack Management | Docker Compose      |
 | Reverse Proxy    | Traefik             |
 | Monitoring       | Prometheus, Grafana |
 | Logging          | Loki, Alloy         |
@@ -53,10 +53,27 @@ This project help:
 
 &nbsp;
 
+## 🧱 Current Services
+
+| Service | Purpose | Access |
+|---------|---------|--------|
+| Traefik | Reverse proxy and routing | `traefik.idp.labops.uk` |
+| Homepage | Platform dashboard | `homepage.idp.labops.uk` |
+| Grafana | Dashboards, logs, alerts | `grafana.idp.labops.uk` |
+| Prometheus | Metrics collection | Internal |
+| Node Exporter | Host metrics | Internal |
+| cAdvisor | Container metrics | Internal |
+| Loki | Log storage | Internal |
+| Alloy | Docker log collection | Internal |
+| Hello / Whoami | Demo services | `hello.idp.labops.uk`, `whoami.idp.labops.uk` |
+
+&nbsp;
+
 ## 📊 Observability
 
 - **Prometheus** collects system and service metrics  
 - **Grafana** provides dashboards for visualisation  
+- **Grafana alerting** detects core target, host, and container issues
 - **Loki, Alloy** for log aggregation and collection
 
 &nbsp;
@@ -84,9 +101,9 @@ This project is evolving into a **self-service Internal Developer Platform**:
 |----------|-------|--------|
 | v1.0.0   | Foundation: Docker, Traefik, Monitoring, Docs | ✅ Completed |
 | v1.1.0   | Logging: Loki + Alloy | ✅ Completed |
-| v1.2.0   | Alerting & Reliability | 🚧 In Progress |
-| v1.3.0   | Platform UX: Docs, Onboarding, Dashboards | ⏳ Planned |
-| v1.4.0   | Automation: APIs, Templates, Standardisation | ⏳ Planned |
+| v1.2.0   | Alerting & Reliability | ✅ Completed |
+| v1.3.0   | Service Onboarding | ⏳ Planned |
+| v1.4.0   | Utility / Environment API | ⏳ Planned |
 | v2.0.0   | GitOps: CI/CD & Automated Deployments | 🔮 Future |
 | v3.0.0   | Kubernetes: k3s Migration | 🔮 Future |
 

@@ -19,21 +19,20 @@ docker ps
 </pre>
 
 ### 2. Check Docker Compose Config
-- Container is connected to the correct network
+- Container is connected to the `pfsense-vlan` network
 
 ### 3. Check Traefik config 
 - Make sure the port is correct
-- Create a dynamic route if needed
-- Ensure the correct middleware is connected if needed
-- Ensure treafik can see the correct host name
+- Confirm the service has the right `Host(...)` rule
+- Confirm Traefik can see the container
 
 ### 4. Ensure targets are UP
 - Check status is "UP"
 - Investigate failing targets
 
-### 5. Verify Grafana datasource
-- Confirm Prometheus is configured correctly
-- Test datasource connection
+### 5. Verify DNS or private access
+- Confirm the `*.idp.labops.uk` hostname resolves from your device
+- If using Tailscale, confirm it is connected outside this repo
 
 &nbsp;
 
@@ -51,13 +50,14 @@ docker ps
 </pre>
 
 ### 2. Check Alloy configuration
-- Ensure correct log paths are configured
+- Confirm Alloy can read the Docker socket
 
 ### 3. Verify Loki datasource in Grafana
 - Check the datasource and click **Save & Test**
 
 ### 4. Check the Traefik Static Config
-- Make sure that accessLog does not have a file path set
+- Confirm Traefik access logs are enabled
+- Generate traffic before querying Traefik logs
 
 &nbsp;
 
@@ -84,9 +84,25 @@ docker ps
 docker logs container_name
 </pre>
 
-or 
+or check the container logs through your Docker management UI if one is in use.
 
-- Go to Portainer to the container and check the logs
+### 4. Grafana Alerts
+- Check for any alerts and drill down into the data
+
+&nbsp;
+
+# Alert Firing
+
+## Symptoms
+- Grafana shows an active alert
+- A core target is down
+- Host or container resource usage is high
+
+## Checks
+- Identify the alert name and affected service
+- Check the related Grafana dashboard
+- Confirm the container is running with `docker ps`
+- Check logs with `docker logs <container_name>`
 
 &nbsp;
 
@@ -95,7 +111,10 @@ or
 ## Restart all services
 
 <pre>
-docker compose restart
+docker compose -f infra/traefik/docker-compose.yml restart
+docker compose -f apps/homepage/docker-compose.yml restart
+docker compose -f monitoring/docker-compose.yml restart
+docker compose -f logging/docker-compose.yml restart
 </pre>
 
 &nbsp;
@@ -120,6 +139,8 @@ The following services should always be running:
 - Homepage
 - Loki
 - Alloy
+- Hello
+- Whoami
 
 ## Verify with:
 
@@ -129,15 +150,15 @@ docker ps
 
 &nbsp;
 
-# Access Issues (Tailscale)
+# Access Issues
 
 ## Symptoms
 - Cannot reach platform services
 
 ## Checks
-- Verify Tailscale is connected
-- Confirm device is authenticated
-- Ensure correct network access is configured
+- Confirm the service hostname uses `idp.labops.uk`
+- Verify DNS/private access from your device
+- If using Tailscale, confirm the device is connected and authenticated
 
 &nbsp;
 
