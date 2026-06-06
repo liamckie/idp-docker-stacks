@@ -1,0 +1,19 @@
+services:
+  utility-api:
+    build: .
+    container_name: utility-api
+    restart: unless-stopped
+    networks:
+      pfsense-vlan:
+        ipv4_address: 172.20.60.51
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.utility-api.rule=Host(`utility-api.idp.labops.uk`)"
+      - "traefik.http.routers.utility-api.entrypoints=https"
+      - "traefik.http.routers.utility-api.tls=true"
+      - "traefik.http.routers.utility-api.tls.certresolver=cloudflare"
+      - "traefik.http.services.utility-api.loadbalancer.server.port=8000"
+
+networks:
+  pfsense-vlan:
+    external: true
