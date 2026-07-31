@@ -11,10 +11,11 @@ Current capabilities include:
 - API health information
 - Platform summary information
 - Homepage widget integration
+- Docker container visibility
+- Container health/status reporting
 
 Future capabilities may include:
 
-- Docker container health
 - Prometheus metrics summaries
 - Alert summaries
 - HTTP, DNS, and connectivity diagnostics
@@ -41,7 +42,7 @@ The Utility API is a supporting service and is not responsible for deployments, 
 
 &nbsp;
 
-## Architecture
+## Target Architecture
 
 <pre>
 Homepage
@@ -55,7 +56,9 @@ Utility API
     +--> Loki
 </pre>
 
-The Utility API acts as an aggregation layer between platform tools and platform users.
+The Utility API is intended to act as an aggregation layer between platform tools and platform users.
+
+In V0.2.0, Docker is the active integration. Prometheus, alerting, and Loki are planned future integrations.
 
 &nbsp;
 
@@ -79,11 +82,22 @@ Returns summary information for Homepage widgets.
 Example:
 <pre>
 {
+  "containers_total": 14,
   "containers_running": 12,
   "containers_unhealthy": 0,
   "alerts_firing": 0
 }
 </pre>
+
+### Containers
+`GET /containers`
+
+Returns a list of Docker containers with name, status, image, and health information.
+
+### Container Health
+`GET /containers/{name}/health`
+
+Returns health information for a specific Docker container.
 
 &nbsp;
 
@@ -105,46 +119,69 @@ Swagger documentation:
 
 ## Container Deployment
 
-Build image (with latest tag):
+Build image:
 
-<pre>docker build -t utility-api .</pre>
+<pre>docker build -t utility-api:v0.2.0 .</pre>
 
 Run container using docker run command:
 
-<pre>docker run -p 8000:8000 utility-api</pre>
+<pre>docker run -p 8000:8000 -v /var/run/docker.sock:/var/run/docker.sock:ro utility-api:v0.2.0</pre>
 
 Run container with compose:
 
 <pre>docker compose up -d</pre>
 
+Example access name:
+
+`utility-api.idp.labops.uk`
+
 &nbsp;
 
 # Roadmap
+
 ### V0.1.0 — API foundation
+Status: Complete
+
 - FastAPI app
 - Dockerised service
 - Traefik routing
 - Health, Version, Homepage summary endpoints
 - Basic README
 
+&nbsp;
+
 ### V0.2.0 — Docker visibility
+Status: Complete
+
 - Docker SDK integration
 - Container list endpoint
 - Container health/status reporting
 - Running/unhealthy container counts
 - Homepage summary uses real Docker data
 
+&nbsp;
+
 ### V0.3.0 — Observability summary
+Status: Planned
+
 - Prometheus, Alert summary integration
 - Metrics summary endpoint
 - Platform health overview
 - Homepage summary includes alerts/targets
 
+&nbsp;
+
 ### V0.4.0 — Diagnostics toolkit
+Status: Planned
+
 - HTTP, DNS check, Troubleshooting summary endpoints
 - Optional TCP port check
 
+&nbsp;
+
 ### V0.5.0 — Safe operations
+Status: Planned
+
 - Optional container restart endpoint
 - Allowed-service list only
 - Auth required

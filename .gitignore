@@ -36,3 +36,9 @@ infra/traefik/cf_api_token.txt
 
 # Grafana runtime data
 monitoring/grafana/
+
+# Python bytecode and cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

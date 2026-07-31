@@ -99,13 +99,14 @@ This project is evolving into a **self-service Internal Developer Platform**:
 
 | Version  | Focus | Status |
 |----------|-------|--------|
-| v1.0.0   | Foundation: Docker, Traefik, Monitoring, Docs | ✅ Completed |
-| v1.1.0   | Logging: Loki + Alloy | ✅ Completed |
-| v1.2.0   | Alerting & Reliability | ✅ Completed |
-| v1.3.0   | Service Onboarding | ⏳ Planned |
-| v1.4.0   | Utility / Environment API | ⏳ Planned |
+| V1.0.0   | Foundation: Docker, Traefik, Monitoring, Docs | ✅ Completed |
+| V1.1.0   | Logging: Loki + Alloy | ✅ Completed |
+| V1.2.0   | Alerting & Reliability | ✅ Completed |
+| V1.3.0   | Service Onboarding / Platform UX using Utility API | 🚧 In Progress |
+| V1.4.0   | Platform Automation (Environment API, Templates, Standardisation) | ⏳ Planned |
+| V1.5.0   | Polish before V2 | ⏳ Planned |
 | v2.0.0   | GitOps: CI/CD & Automated Deployments | 🔮 Future |
-| v3.0.0   | Kubernetes: k3s Migration | 🔮 Future |
+| V3.0.0   | Kubernetes: k3s Migration | 🔮 Future |
 
 &nbsp;
 

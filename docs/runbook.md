@@ -122,7 +122,7 @@ docker compose -f logging/docker-compose.yml restart
 ## Restart individual container
 
 <pre>
-docker restart <container_name>
+docker restart {container_name}
 </pre>
 
 &nbsp;
@@ -139,8 +139,9 @@ The following services should always be running:
 - Homepage
 - Loki
 - Alloy
-- Hello
-- Whoami
+- Utility API 
+
+&nbsp;
 
 ## Verify with:
 
@@ -152,18 +153,50 @@ docker ps
 
 # Access Issues
 
-## Symptoms
+### Symptoms
 - Cannot reach platform services
 
-## Checks
+### Checks
 - Confirm the service hostname uses `idp.labops.uk`
 - Verify DNS/private access from your device
 - If using Tailscale, confirm the device is connected and authenticated
 
 &nbsp;
 
-# Notes
+## Notes
 
 - Always check logs first when diagnosing issues
 - Use Grafana dashboards for quick visibility
 - Validate routing before assuming service failure
+
+&nbsp;
+
+# Utility API — Diagnostics
+
+Purpose: quick operational checks and container visibility for platform services.
+
+### Endpoints:
+- `GET /health` — API health
+- `GET /version` — service version
+- `GET /homepage/summary` — platform summary used by the Homepage card
+- `GET /containers` — list Docker containers with `name`, `status`, `image`, and `health`
+- `GET /containers/{name}/health` — detailed health for a specific container
+
+&nbsp;
+
+### Examples:
+
+Check API health:
+<pre>
+curl -sS http://utility-api.idp.labops.uk/health
+</pre>
+
+List containers:
+<pre>
+curl -sS http://utility-api.idp.labops.uk/containers | jq '.'
+</pre>
+
+Check a container's health:
+<pre>
+curl -sS http://utility-api.idp.labops.uk/containers/utility-api/health | jq '.'
+</pre>
