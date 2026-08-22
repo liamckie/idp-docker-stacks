@@ -61,7 +61,7 @@ Example alerts:
 
 &nbsp;
 
-# V1.3 - Service Onboarding / Platform UX using Utility API ![Status](https://img.shields.io/badge/Status-🚧%20In%20Progress-black)
+# V1.3 - Service Onboarding / Platform UX using Utility API ![Status](https://img.shields.io/badge/Status-✅%20Complete-green)
 
 <b>Goal</b>: Make it easier to add and observe new services by using the Utility API as the example workload.
 
@@ -88,7 +88,7 @@ Example alerts:
 
 &nbsp;
 
-# V1.4 - Platform Automation / Environment API ![Status](https://img.shields.io/badge/Status-⏳%20Planned-blue)
+# V1.4 - Platform Automation / Environment API ![Status](https://img.shields.io/badge/Status-🚧%20In%20Progress-black)
 
 <b>Goal</b>: Start turning the IDP into something that can standardise and automate platform-managed workloads.
 
@@ -166,24 +166,13 @@ Example alerts:
 
 ## Current Focus
 
-Current Version: V1.3.0
+Current Version: V1.4.0
 
-Working On:
-- Utility API as a demo/internal service
-- Service onboarding documentation
-- Standard Traefik label example
-- Standard healthcheck pattern
-- Homepage card
-- Grafana/Loki log visibility
-- Prometheus metrics
-- Basic runbook entries for the Utility API
-
-Note: Utility API currently exposes `/health`, `/version`, `/homepage/summary`, and Docker visibility endpoints `/containers` and `/containers/{name}/health` (V0.2.0). `/info` and `/metrics` are planned, not implemented yet
 
 &nbsp;
 
 ### Next Version:
-- V1.4.0 Platform Automation / Environment API
+- V1.5.0 Final Polish before V2
 
 &nbsp;
 

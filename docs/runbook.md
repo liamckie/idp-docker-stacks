@@ -188,15 +188,15 @@ Purpose: quick operational checks and container visibility for platform services
 
 Check API health:
 <pre>
-curl -sS http://utility-api.idp.labops.uk/health
+curl -sS https://utility-api.idp.labops.uk/health
 </pre>
 
 List containers:
 <pre>
-curl -sS http://utility-api.idp.labops.uk/containers | jq '.'
+curl -sS https://utility-api.idp.labops.uk/containers | jq '.'
 </pre>
 
 Check a container's health:
 <pre>
-curl -sS http://utility-api.idp.labops.uk/containers/utility-api/health | jq '.'
+curl -sS https://utility-api.idp.labops.uk/containers/utility-api/health | jq '.'
 </pre>

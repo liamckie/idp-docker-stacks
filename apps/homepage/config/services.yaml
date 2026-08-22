@@ -16,4 +16,24 @@
     - Portainer:
         href: https://portainer.idp.labops.uk/
         description: Dev Portainer Dashboard
-        icon: portainer-icon.png                   
+        icon: portainer-icon.png  
+
+    - Utility API:
+        href: https://utility-api.idp.labops.uk/docs
+        description: IDP reference workload
+        widget:
+          type: customapi
+          url: https://utility-api.idp.labops.uk/homepage/summary
+          refreshInterval: 10000
+          mappings:
+            - field: containers_running
+              label: Running
+              format: number
+
+            - field: containers_unhealthy
+              label: Unhealthy
+              format: number
+
+            - field: alerts_firing
+              label: Alerts
+              format: number                  
