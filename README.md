@@ -66,6 +66,7 @@ This project help:
 | Loki | Log storage | Internal |
 | Alloy | Docker log collection | Internal |
 | Hello / Whoami | Demo services | `hello.idp.labops.uk`, `whoami.idp.labops.uk` |
+| Utility API | Fetch the health and status of containers | `utility-api.idp.labops.uk` |
 
 &nbsp;
 
@@ -84,11 +85,11 @@ This project is evolving into a **self-service Internal Developer Platform**:
 
 ### 🔜 Upcoming Features
 
-- Environment Provisioner API  
-  → Create services via API instead of manual deployment  
+- Environment API and platform automation
+  → Standardise service definitions, expose platform/environment information, and reduce manual onboarding through APIs, templates, and validation
 
-- DevOps Utility API  
-  → Logs, restart, status, health checks  
+- GitOps, CI/CD, Secret Management  
+  → Automated Deployments 
 
 - Web UI  
   → Self-service platform interface  
@@ -102,8 +103,8 @@ This project is evolving into a **self-service Internal Developer Platform**:
 | V1.0.0   | Foundation: Docker, Traefik, Monitoring, Docs | ✅ Completed |
 | V1.1.0   | Logging: Loki + Alloy | ✅ Completed |
 | V1.2.0   | Alerting & Reliability | ✅ Completed |
-| V1.3.0   | Service Onboarding / Platform UX using Utility API | 🚧 In Progress |
-| V1.4.0   | Platform Automation (Environment API, Templates, Standardisation) | ⏳ Planned |
+| V1.3.0   | Service Onboarding / Platform UX using Utility API | ✅ Completed |
+| V1.4.0   | Platform Automation (Environment API, Templates, Standardisation) | 🚧 In Progress |
 | V1.5.0   | Polish before V2 | ⏳ Planned |
 | v2.0.0   | GitOps: CI/CD & Automated Deployments | 🔮 Future |
 | V3.0.0   | Kubernetes: k3s Migration | 🔮 Future |
@@ -120,6 +121,9 @@ Detailed breakdowns available in [`docs/`](./docs):
 - Monitoring stack
 - Deployment process
 - Roadmap
+- Runbook
+- Service Onboarding
+- Deployment
 
 &nbsp;
 
