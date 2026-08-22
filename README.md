@@ -85,7 +85,7 @@ This project is evolving into a **self-service Internal Developer Platform**:
 
 ### 🔜 Upcoming Features
 
-- Environment API and platform automation
+- Environment API and platform automation  
   → Standardise service definitions, expose platform/environment information, and reduce manual onboarding through APIs, templates, and validation
 
 - GitOps, CI/CD, Secret Management  
