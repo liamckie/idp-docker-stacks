@@ -42,3 +42,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Runtime logs
+infra/traefik/logs/
+apps/homepage/config/logs/
