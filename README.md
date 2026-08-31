@@ -145,3 +145,9 @@ This is a **homelab project** built for learning and demonstration purposes.
 ## 🚀 Future Goal
 
 > Build a platform where services are created, deployed, and managed via API/UI — not manually.
+
+&nbsp;
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
